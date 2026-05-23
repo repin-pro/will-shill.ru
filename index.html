@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>main</title>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
+  <script defer src="js/scrypt.js"></script>
+</head>
+
+<body>
+  <div class="menu">
+    <div class="menu__cont">
+      <div class="menu__top-wrap">
+        <a href="/" class="header__logo">
+          <img src="img/logo.svg" class="header__logo" alt="Логотип компании">
+        </a>
+        <div class="menu__closed"></div>
+      </div>
+    </div>
+
+    <ul class="menu-style">
+      <li class="main-text menu__text">
+        <a href="about.html" class="footer__menu-link">Обо мне</a>
+      </li>
+      <li class="main-text menu__text">
+        <a href="gallery.html" class="footer__menu-link">Галерея</a>
+      </li>
+      <li class="main-text menu__text">
+        <a href="songs.html" class="footer__menu-link">Мои песни</a>
+      </li>
+      <li class="main-text menu__text">
+        <a href="video.html" class="footer__menu-link">Видео</a>
+      </li>
+      <li class="main-text menu__text">
+        <a href="contackt.html" class="footer__menu-link">Контакты</a>
+      </li>
+    </ul>
+
+
+    <div class="header__bottom-social">
+      <a href="https://vk.com" class="btn-social">
+        <svg class="btn-social" viewBox="0 0 50 50">
+          <use href="sprites.svg#vk"></use>
+        </svg>
+      </a>
+      <a href="https://dzen.ru" class="btn-social">
+        <svg class="btn-social" viewBox="0 0 50 50">
+          <use href="sprites.svg#dzen"></use>
+        </svg>
+      </a>
+      <a href="https://whatsapp.com" class="btn-social">
+        <svg class="btn-social" viewBox="0 0 50 50">
+          <use href="sprites.svg#whatsapp"></use>
+        </svg>
+      </a>
+    </div>
+
+  </div>
+
+  <header class="header">
+    <div class="header__slider-wrapper">
+      <div class="slider">
+        <!-- Контейнер для фоновых изображений -->
+        <div class="slider__background">
+          <div class="slide slide-1"></div>
+          <div class="slide slide-2"></div>
+          <div class="slide slide-3"></div>
+          <div class="slide slide-4"></div>
+          <div class="slide slide-5"></div>
+          <div class="slide slide-6"></div>
+          <div class="slide slide-7"></div>
+        </div>
+      </div>
+
+      <!-- Контент, который должен оставаться видимым -->
+      <div class="header__overlay container">
+        <!-- Логотип и бургер внутри контейнера -->
+        <div class="container header__top-container">
+          <div class="header__top">
+            <a href="/" class="header__logo">
+              <img src="img/logo.svg" alt="Логотип компании">
+            </a>
+            <button class="header__burger" aria-label="Открыть меню"></button>
+          </div>
+        </div>
+
+        <div class="header__content container">
+          <div class="header__content-social">
+            <a href="/contackt.html" class="btn-stroke">Обратный звонок</a>
+            <div class="header__bottom-social">
+              <a href="https://vk.com" class="btn-social">
+                <svg class="btn-social" viewBox="0 0 50 50">
+                  <use href="sprites.svg#vk"></use>
+                </svg>
+              </a>
+              <a href="https://dzen.ru" class="btn-social">
+                <svg class="btn-social" viewBox="0 0 50 50">
+                  <use href="sprites.svg#dzen"></use>
+                </svg>
+              </a>
+              <a href="https://whatsapp.com" class="btn-social">
+                <svg class="btn-social" viewBox="0 0 50 50">
+                  <use href="sprites.svg#whatsapp"></use>
+                </svg>
+              </a>
+            </div>
+            <div class="header__arrow-wrap">
+              <svg class="arrow-down" viewBox="0 0 56 54" width="56" height="54">
+                <use href="sprites.svg#arrow-down"></use>
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <section class="about">
+    <div class="container">
+      <a href="#" name="about" class="title__link main-title__set">
+        <h2 class="title-h2">обо мне</h2>
+      </a>
+
+      <div class="about__content">
+        <img src="img/mv-photo.jpg" class="about__photo gold-card-style" alt="Фотография Михаила Вяльшина">
+        <div class="about__content-text">
+          <p class="main-text">Родился в&nbsp;Москве, 9&nbsp;октября 1958г., и&nbsp;до&nbsp;сих пор обожаю
+            вспоминать&nbsp;и, по&nbsp;возможности,
+            посещать этот некогда уютный уголок между &laquo;Чистыми прудами&raquo; и&nbsp;Земляным валом ...
+            Там было детство&nbsp;&mdash; что еще добавишь?!... <br> <br>
+
+            Спасибо школе &#8470;&nbsp;657, &laquo;Музыкалке&raquo; &#8470;&nbsp;5&nbsp;им. Игумнова, Дворцу пионеров и
+            ...-как я&nbsp;сам шучу&nbsp;&mdash; &laquo;Ни&nbsp;одно из&nbsp;этих
+            замечательных заведений, так и&nbsp;не&nbsp;исправило мою беззаботность!&raquo; ... <br> <br>
+            Низкий поклон всем воспитателям! <br>
+            А&nbsp;потом... Потом в&nbsp;нашу советскую &laquo;идиллию&raquo; ворвался безбашенно&nbsp;&mdash;
+            чувственный Его Величество ROCK&rsquo;N ROLL! ...
+            Началось! <br> <br>
+
+            До&nbsp;Московского архитектурно&nbsp;&mdash; строительного&nbsp;я, получив в&nbsp;подарок от&nbsp;любимой
+            тётушки свою первую электронную
+            гитару &laquo;Record&raquo;, переиграл в&nbsp;таком количестве групп, что позволил себе, в&nbsp;конце
+            концов, сочинять своё... Ну,
+            вы&nbsp;понимаете ... Своё!... <br> <br>
+            А&nbsp;дальше&nbsp;&mdash; Армия, затем, затем ресторанная музыка, запись на&nbsp;старомодные носители,
+            и&nbsp;т.д.&nbsp;и&nbsp;т.п....<br> <br></p>
+          <a href="about.html" class="btn-more">Подробнее >></a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="gallery">
+    <div class="container">
+      <a href="#" class="title__link main-title__set">
+        <h2 class="title-h2">галерея</h2>
+      </a>
+      <div class="gallery__cards">
+        <div class="gallery__card gold-card-style">
+          <img src="img/gallery.jpg" class="gallery__card-img" alt="Галерея">
+          <h3 class="title-h3 gallery__card-title">Галерея</h3>
+          <p class="main-text gallery__card-text">В&nbsp;разделе &laquo;Галерея&raquo; мне хочется,
+            в&nbsp;первую очередь, познакомить
+            Вас с&nbsp;графикой, точнее, с&nbsp;теми рисунками, которые делаются на&nbsp;хорошей бумаге, в&nbsp;неплохом
+            настроении, без суеты ...</p>
+          <a href="gallery.html" class="btn-more">Подробнее >></a>
+        </div>
+        <div class="gallery__card gold-card-style">
+          <img src="img/poems.jpg" class="gallery__card-img" alt="Сихи">
+          <h3 class="title-h3 gallery__card-title">Стихи</h3>
+          <p class="main-text gallery__card-text">Раздел &quot;Мои стихи отведен под рукописные тексты. Признаюсь, очень
+            хочется при жизни! Аккуратно расписаться под самим&nbsp;же собой сочинёнными и&nbsp;таки исполненными
+            собственными стихами</p>
+          <a href="gallery.html" class="btn-more">Подробнее >></a>
+        </div>
+        <div class="gallery__card gold-card-style">
+          <img src="img/frescoes.jpg" class="gallery__card-img" alt="Фрески">
+          <h3 class="title-h3 gallery__card-title">Фрески</h3>
+          <p class="main-text gallery__card-text">Это блок, который описывает мои работы в&nbsp;области фресок.
+            Я&nbsp;специализируюсь на&nbsp;создании уникальных и&nbsp;высококачественных фресок для различных помещений
+            и&nbsp;интерьеров.</p>
+          <a href="gallery.html" class="btn-more">Подробнее >></a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="songs">
+    <div class="container">
+      <div class="title-top-cont">
+        <a href="#" class="title__link main-title__set">
+          <h2 class="title-h2">мои песни</h2>
+        </a>
+        <button class="btn-more">Смотреть все >></button>
+      </div>
+      <div class="songs__cards">
+        <div class="songs__card">
+          <a href="#" class="songs__card-link">
+            <img class="songs__card-img" src="img/albom/13_stories.jpg" alt="13 Историй">
+          </a>
+        </div>
+
+        <div class="songs__card">
+          <a href="#" class="songs__card-link">
+            <img class="songs__card-img" src="img/albom/Austrian_law.jpg" alt="13 Историй">
+          </a>
+        </div>
+
+        <div class="songs__card">
+          <a href="#" class="songs__card-link">
+            <img class="songs__card-img" src="img/albom/Irene.jpg" alt="13 Историй">
+          </a>
+        </div>
+
+        <div class="songs__card">
+          <a href="#" class="songs__card-link">
+            <img class="songs__card-img" src="img/albom/Margot.jpg" alt="13 Историй">
+          </a>
+        </div>
+
+        <div class="songs__card">
+          <a href="#" class="songs__card-link">
+            <img class="songs__card-img" src="img/albom/pawnshop.jpg" alt="13 Историй">
+          </a>
+        </div>
+
+        <div class="songs__card">
+          <a href="#" class="songs__card-link">
+            <img class="songs__card-img" src="img/albom/prana.jpg" alt="13 Историй">
+          </a>
+        </div>
+
+        <div class="songs__card">
+          <a href="#" class="songs__card-link">
+            <img class="songs__card-img" src="img/albom/shadow_on_guitar.jpg" alt="13 Историй">
+          </a>
+        </div>
+
+
+      </div>
+      <div class="songs__card-btn">
+        <button class="song-left btn-left btn-arrow"></button>
+        <button class="song-right btn-right btn-arrow"></button>
+      </div>
+    </div>
+  </section>
+
+  <section class="video">
+    <div class="container">
+      <div class="title-top-cont">
+        <a href="#" class="title__link main-title__set">
+          <h2 class="title-h2">видео</h2>
+        </a>
+        <button class="btn-more">Смотреть все >></button>
+      </div>
+      <div class="video__cards">
+        <div class="video__card video__card-size ">
+          <div class="video__overlay">
+            <div class="video__card-logo"></div>
+            <p class="video__card-title">Чара</p>
+          </div>
+          <div class="video__card-filter"></div>
+          <video class="video__card-size" controls src="video/chara.mp4"></video>
+
+        </div>
+
+        <div class="video__card video__card-size ">
+          <div class="video__overlay">
+            <div class="video__card-logo"></div>
+            <p class="video__card-title">Дуреха</p>
+          </div>
+          <div class="video__card-filter"></div>
+          <video class="video__card-size" controls src="video/dureha.mp4"></video>
+        </div>
+
+        <div class="video__card video__card-size ">
+          <div class="video__overlay">
+            <div class="video__card-logo"></div>
+            <p class="video__card-title">Нинэль</p>
+          </div>
+          <div class="video__card-filter"></div>
+          <video class="video__card-size" controls src="video/ninel.mp4"></video>
+        </div>
+
+        <div class="video__card video__card-size ">
+          <div class="video__overlay">
+            <div class="video__card-logo"></div>
+            <p class="video__card-title">Нас двое</p>
+          </div>
+          <div class="video__card-filter"></div>
+          <video class="video__card-size" controls src="video/nas_dvoe.mp4"></video>
+        </div>
+
+        <div class="video__card video__card-size ">
+          <div class="video__overlay">
+            <div class="video__card-logo"></div>
+            <p class="video__card-title">Контриммиграция</p>
+          </div>
+          <div class="video__card-filter"></div>
+          <video class="video__card-size" controls src="video/kontrimigraciya.mp4"></video>
+        </div>
+
+        <div class="video__card video__card-size ">
+          <div class="video__overlay">
+            <div class="video__card-logo"></div>
+            <p class="video__card-title">В светлой юности своей</p>
+          </div>
+          <div class="video__card-filter"></div>
+          <video class="video__card-size" controls src="video/v_svetloy_unosti_svoei.mp4"></video>
+        </div>
+
+        <div class="video__card video__card-size ">
+          <div class="video__overlay">
+            <div class="video__card-logo"></div>
+            <p class="video__card-title">Вечер опять...</p>
+          </div>
+          <div class="video__card-filter"></div>
+          <video class="video__card-size" controls src="video/vecher_opyat.mp4"></video>
+        </div>
+
+        <div class="video__card video__card-size ">
+          <div class="video__overlay">
+            <div class="video__card-logo"></div>
+            <p class="video__card-title">Заколдованный круг</p>
+          </div>
+          <div class="video__card-filter"></div>
+          <video class="video__card-size" controls src="video/zakluchitelni_krug.mp4"></video>
+        </div>
+
+        <div class="video__card video__card-size ">
+          <div class="video__overlay">
+            <div class="video__card-logo"></div>
+            <p class="video__card-title">Романс</p>
+          </div>
+          <div class="video__card-filter"></div>
+          <video class="video__card-size" controls src="video/romans.mp4"></video>
+        </div>
+
+        <div class="video__card video__card-size ">
+          <div class="video__overlay">
+            <div class="video__card-logo"></div>
+            <p class="video__card-title">Рабочий момент 1</p>
+          </div>
+          <div class="video__card-filter"></div>
+          <video class="video__card-size" controls src="video/rabochi_moment_1.mp4"></video>
+        </div>
+
+        <div class="video__card video__card-size ">
+          <div class="video__overlay">
+            <div class="video__card-logo"></div>
+            <p class="video__card-title">Рабочий момент</p>
+          </div>
+          <div class="video__card-filter"></div>
+          <video class="video__card-size" controls src="video/rabochi_moment.mp4"></video>
+        </div>
+
+        <div class="video__card video__card-size ">
+          <div class="video__overlay">
+            <div class="video__card-logo"></div>
+            <p class="video__card-title">Гаражная "гастроль". Пьеса</p>
+          </div>
+          <div class="video__card-filter"></div>
+          <video class="video__card-size" controls src="video/garajnaya_gastrol_pesa.mp4"></video>
+        </div>
+
+        <div class="video__card video__card-size ">
+          <div class="video__overlay">
+            <div class="video__card-logo"></div>
+            <p class="video__card-title">Гаражная гастроль. Кантри.</p>
+          </div>
+          <div class="video__card-filter"></div>
+          <video class="video__card-size" controls src="video/garajnaya_gatrol_kantri.mp4"></video>
+        </div>
+
+        <div class="video__card video__card-size ">
+          <div class="video__overlay">
+            <div class="video__card-logo"></div>
+            <p class="video__card-title">Фонари зажглись...</p>
+          </div>
+          <div class="video__card-filter"></div>
+          <video class="video__card-size" controls src="video/fonari_zajglis.mp4"></video>
+        </div>
+
+        <div class="video__card video__card-size ">
+          <div class="video__overlay">
+            <div class="video__card-logo"></div>
+            <p class="video__card-title">Париж</p>
+          </div>
+          <div class="video__card-filter"></div>
+          <video class="video__card-size" controls src="video/parij.mp4"></video>
+        </div>
+
+        <div class="video__card video__card-size ">
+          <div class="video__overlay">
+            <div class="video__card-logo"></div>
+            <p class="video__card-title">Песня-подарок “Нива” для л</p>
+          </div>
+          <div class="video__card-filter"></div>
+          <video class="video__card-size" controls src="video/pesnya_podarok_dlya_l.mp4"></video>
+        </div>
+
+        <div class="video__card video__card-size ">
+          <div class="video__overlay">
+            <div class="video__card-logo"></div>
+            <p class="video__card-title">Песня-подарок для лагеря “Нива”, Геленджик</p>
+          </div>
+          <div class="video__card-filter"></div>
+          <video class="video__card-size" controls src="video/pesya-podarok_dlya_lagerya_noiva.mp4"></video>
+        </div>
+
+        <div class="video__card video__card-size ">
+          <div class="video__overlay">
+            <div class="video__card-logo"></div>
+            <p class="video__card-title">Разрядка напряжённости. Шутка.</p>
+          </div>
+          <div class="video__card-filter"></div>
+          <video class="video__card-size" controls src="video/razryadka-naprajonnosti.mp4"></video>
+        </div>
+
+      </div>
+      <div class="songs__card-btn">
+        <button class="video-left btn-left btn-arrow"></button>
+        <button class="video-right btn-right btn-arrow"></button>
+      </div>
+    </div>
+  </section>
+  <section class="contakt">
+    <div class="container contact__set-wrap">
+      <div class="contact__form-wrap">
+        <h2 class="title-h2 contakt__title">контакты</h2>
+        <p class="main-text contact__text">Если у вас появились вопросы, пожалуйста заполните форму ниже и я с вами
+          свяжусь!</p>
+        <form class="contakt__form">
+          <input class="contakt__input" type="text" placeholder="Имя">
+
+          <input class="contakt__input" type="number" placeholder="Телефон">
+
+          <button class="contakt__submint btn-fill animate__fill-btn" type="submit">Отправить</button>
+        </form>
+      </div>
+      <div class="mail-img"></div>
+      <div class="contact__flesh"></div>
+
+    </div>
+  </section>
+  <footer class="footer__menu-text">
+    <div class="container">
+      <div class="footer__items">
+        <div class="footer__left">
+          <a href="/" class="footer__left-link">
+            <div class="footer__left-logo"></div>
+          </a>
+        </div>
+        <div class="footer__center">
+          <h2 class="title-h2 footer__title">РАЗДЕЛЫ САЙТА</h2>
+          <ul class="menu-style">
+            <a href="/about.html" class="footer__menu-link">
+              <li class="main-text menu-style footer__menu-text menu__text">Обо мне</li>
+            </a>
+            <a href="/gallery.html" class="footer__menu-link">
+              <li class="main-text menu-style footer__menu-text menu__text">Галерея</li>
+            </a>
+            <a href="/video.html" class="footer__menu-link">
+              <li class="main-text menu-style footer__menu-text menu__text">Видео</li>
+            </a>
+            <a href="/contackt.html" class="footer__menu-link">
+              <li class="main-text menu-style footer__menu-text menu__text">Контакты</li>
+            </a>
+          </ul>
+        </div>
+        <div class="footer__right">
+          <h2 class="title-h2 footer__title">СОЦИАЛЬНЫЕ СЕТИ</h2>
+          <div class="header__bottom-social">
+            <a href="https://vk.com" target="_blank">
+              <svg class="btn-social" viewBox="0 0 50 50">
+                <use href="sprites.svg#vk"></use>
+              </svg>
+            </a>
+            <a href="https://dzen.ru" class="btn-social">
+              <svg class="btn-social" viewBox="0 0 50 50">
+                <use href="sprites.svg#dzen"></use>
+              </svg>
+            </a>
+            <a href="https://whatsapp.com" class="btn-social">
+              <svg class="btn-social" viewBox="0 0 50 50">
+                <use href="sprites.svg#whatsapp"></use>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>

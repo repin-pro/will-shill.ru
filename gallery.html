@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
+  <script defer src="js/scrypt.js"></script>
+</head>
+
+<body>
+  <div class="menu">
+    <div class="menu__cont">
+      <div class="menu__top-wrap">
+        <a href="/" class="header__logo">
+          <img src="img/logo.svg" class="header__logo" alt="Логотип компании">
+        </a>
+        <div class="menu__closed"></div>
+      </div>
+    </div>
+
+    <ul class="menu-style">
+      <li class="main-text menu__text">
+        <a href="about.html" class="footer__menu-link">Обо мне</a>
+      </li>
+      <li class="main-text menu__text">
+        <a href="gallery.html" class="footer__menu-link">Галерея</a>
+      </li>
+      <li class="main-text menu__text">
+        <a href="songs.html" class="footer__menu-link">Мои песни</a>
+      </li>
+      <li class="main-text menu__text">
+        <a href="video.html" class="footer__menu-link">Видео</a>
+      </li>
+      <li class="main-text menu__text">
+        <a href="contackt.html" class="footer__menu-link">Контакты</a>
+      </li>
+    </ul>
+
+
+    <div class="header__bottom-social">
+      <a href="https://vk.com" class="btn-social">
+        <svg class="btn-social" viewBox="0 0 50 50">
+          <use href="sprites.svg#vk"></use>
+        </svg>
+      </a>
+      <a href="https://dzen.ru" class="btn-social">
+        <svg class="btn-social" viewBox="0 0 50 50">
+          <use href="sprites.svg#dzen"></use>
+        </svg>
+      </a>
+      <a href="https://whatsapp.com" class="btn-social">
+        <svg class="btn-social" viewBox="0 0 50 50">
+          <use href="sprites.svg#whatsapp"></use>
+        </svg>
+      </a>
+    </div>
+
+  </div>
+
+  <header class="header">
+    <div class="header__slider-wrapper">
+      <div class="slider">
+        <!-- Контейнер для фоновых изображений -->
+        <div class="slider__background">
+          <div class="slide slide-1"></div>
+          <div class="slide slide-2"></div>
+          <div class="slide slide-3"></div>
+          <div class="slide slide-4"></div>
+          <div class="slide slide-5"></div>
+          <div class="slide slide-6"></div>
+          <div class="slide slide-7"></div>
+        </div>
+      </div>
+
+      <!-- Контент, который должен оставаться видимым -->
+      <div class="header__overlay container">
+        <!-- Логотип и бургер внутри контейнера -->
+        <div class="container header__top-container">
+          <div class="header__top">
+            <a href="/" class="header__logo">
+              <img src="img/logo.svg" alt="Логотип компании">
+            </a>
+            <button class="header__burger" aria-label="Открыть меню"></button>
+          </div>
+        </div>
+
+        <div class="header__content container">
+          <div class="header__content-social">
+            <a href="/contackt.html" class="btn-stroke">Обратный звонок</a>
+            <div class="header__bottom-social">
+              <a href="https://vk.com" class="btn-social">
+                <svg class="btn-social" viewBox="0 0 50 50">
+                  <use href="sprites.svg#vk"></use>
+                </svg>
+              </a>
+              <a href="https://dzen.ru" class="btn-social">
+                <svg class="btn-social" viewBox="0 0 50 50">
+                  <use href="sprites.svg#dzen"></use>
+                </svg>
+              </a>
+              <a href="https://whatsapp.com" class="btn-social">
+                <svg class="btn-social" viewBox="0 0 50 50">
+                  <use href="sprites.svg#whatsapp"></use>
+                </svg>
+              </a>
+            </div>
+            <div class="header__arrow-wrap">
+              <svg class="arrow-down" viewBox="0 0 56 54" width="56" height="54">
+                <use href="sprites.svg#arrow-down"></use>
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <section class="gallery-page">
+    <div class="container">
+        <h2 class="gallery-title title-h2">ГАЛЕРЕЯ</h2>
+
+        <div class="gallery__tabs">
+            <button class="gallery__tab-button btn-stroke active" data-target="gallery">Галерея</button>
+            <button class="gallery__tab-button btn-stroke" data-target="fresco">Фрески</button>
+            <button class="gallery__tab-button btn-stroke" data-target="poems">Стихи</button>
+        </div>
+
+        <div class="gallery__tab-content gold-card-style active" id="gallery">
+            <div class="gallery-columns">
+                <div class="gallery-column">
+                    <img src="/gallery-data/gallery/157.jpg" alt="Изображение 1">
+                    <img src="/gallery-data/gallery/188.jpg" alt="Изображение 2">
+                </div>
+                <div class="gallery-column">
+                    <img src="/gallery-data/gallery/175.jpg" alt="Изображение 3">
+                    <img src="/gallery-data/gallery/191.jpg" alt="Изображение 4">
+                </div>
+                <div class="gallery-column">
+                    <img src="/gallery-data/gallery/181.jpg" alt="Изображение 5">
+                    <img src="/gallery-data/gallery/198.jpg" alt="Изображение 6">
+                </div>
+                <div class="gallery-column">
+                    <img src="/gallery-data/gallery/182.jpg" alt="Изображение 7">
+                </div>
+            </div>
+        </div> 
+
+         <div class="gallery__tab-content gold-card-style" id="fresco">
+            <div class="gallery-columns">
+                <div class="gallery-column">
+                    <img src="/gallery-data/freski/5.jpg" alt="Изображение 1">
+                    <img src="/gallery-data/freski/5.jpg" alt="Изображение 2">
+                </div>
+                <div class="gallery-column">
+                    <img src="/gallery-data/gallery/175.jpg" alt="Изображение 3">
+                    <img src="/gallery-data/gallery/191.jpg" alt="Изображение 4">
+                </div>
+                <div class="gallery-column">
+                    <img src="/gallery-data/gallery/181.jpg" alt="Изображение 5">
+                    <img src="/gallery-data/gallery/198.jpg" alt="Изображение 6">
+                </div>
+                <div class="gallery-column">
+                    <img src="/gallery-data/gallery/182.jpg" alt="Изображение 7">
+                </div>
+            </div>
+        </div>
+
+         <div class="gallery__tab-content gold-card-style" id="poems">
+            <div class="gallery-columns">
+                <div class="gallery-column">
+                    <img src="/gallery-data/stihi/3 (1).jpg" alt="Изображение 1">
+                    <img src="/gallery-data/gallery/188.jpg" alt="Изображение 2">
+                </div>
+                <div class="gallery-column">
+                    <img src="/gallery-data/gallery/175.jpg" alt="Изображение 3">
+                    <img src="/gallery-data/gallery/191.jpg" alt="Изображение 4">
+                </div>
+                <div class="gallery-column">
+                    <img src="/gallery-data/gallery/181.jpg" alt="Изображение 5">
+                    <img src="/gallery-data/gallery/198.jpg" alt="Изображение 6">
+                </div>
+                <div class="gallery-column">
+                    <img src="/gallery-data/gallery/182.jpg" alt="Изображение 7">
+                </div>
+            </div>
+        </div>
+
+</section>
+
+
+
+  <footer class="footer__menu-text">
+    <div class="container">
+      <div class="footer__items">
+        <div class="footer__left">
+          <a href="/" class="footer__left-link">
+            <div class="footer__left-logo"></div>
+          </a>
+        </div>
+        <div class="footer__center">
+          <h2 class="title-h2 footer__title">РАЗДЕЛЫ САЙТА</h2>
+          <ul class="menu-style">
+            <a href="/about.html" class="footer__menu-link">
+              <li class="main-text menu-style footer__menu-text menu__text">Обо мне</li>
+            </a>
+            <a href="/gallery.html" class="footer__menu-link">
+              <li class="main-text menu-style footer__menu-text menu__text">Галерея</li>
+            </a>
+            <a href="/video.html" class="footer__menu-link">
+              <li class="main-text menu-style footer__menu-text menu__text">Видео</li>
+            </a>
+            <a href="/contackt.html" class="footer__menu-link">
+              <li class="main-text menu-style footer__menu-text menu__text">Контакты</li>
+            </a>
+          </ul>
+        </div>
+        <div class="footer__right">
+          <h2 class="title-h2 footer__title">СОЦИАЛЬНЫЕ СЕТИ</h2>
+          <div class="header__bottom-social">
+            <a href="https://vk.com" target="_blank">
+              <svg class="btn-social" viewBox="0 0 50 50">
+                <use href="sprites.svg#vk"></use>
+              </svg>
+            </a>
+            <a href="https://dzen.ru" class="btn-social">
+              <svg class="btn-social" viewBox="0 0 50 50">
+                <use href="sprites.svg#dzen"></use>
+              </svg>
+            </a>
+            <a href="https://whatsapp.com" class="btn-social">
+              <svg class="btn-social" viewBox="0 0 50 50">
+                <use href="sprites.svg#whatsapp"></use>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+ <div class="image-overlay">
+    <div class="image-overlay__content gold-card-style">
+        <button class="image-overlay__close">×</button>
+        <div class="image-overlay__wrapper">
+            <img class="image-overlay__image " src="" alt="Увеличенное изображение">
+        </div>
+    </div>
+</div>
+
+
+</body>
+
+</html>

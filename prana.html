@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
+  <script defer src="js/scrypt.js"></script>
+</head>
+
+<body>
+
+  <div class="menu">
+    <div class="menu__cont">
+      <div class="menu__top-wrap">
+        <a href="/" class="header__logo">
+          <img src="img/logo.svg" class="header__logo" alt="Логотип компании">
+        </a>
+        <div class="menu__closed"></div>
+      </div>
+    </div>
+
+    <ul class="menu-style">
+      <li class="main-text menu__text">
+        <a href="about.html" class="footer__menu-link">Обо мне</a>
+      </li>
+      <li class="main-text menu__text">
+        <a href="gallery.html" class="footer__menu-link">Галерея</a>
+      </li>
+      <li class="main-text menu__text">
+        <a href="songs.html" class="footer__menu-link">Мои песни</a>
+      </li>
+      <li class="main-text menu__text">
+        <a href="video.html" class="footer__menu-link">Видео</a>
+      </li>
+      <li class="main-text menu__text">
+        <a href="contackt.html" class="footer__menu-link">Контакты</a>
+      </li>
+    </ul>
+
+
+    <div class="header__bottom-social">
+      <a href="https://vk.com" class="btn-social">
+        <svg class="btn-social" viewBox="0 0 50 50">
+          <use href="sprites.svg#vk"></use>
+        </svg>
+      </a>
+      <a href="https://dzen.ru" class="btn-social">
+        <svg class="btn-social" viewBox="0 0 50 50">
+          <use href="sprites.svg#dzen"></use>
+        </svg>
+      </a>
+      <a href="https://whatsapp.com" class="btn-social">
+        <svg class="btn-social" viewBox="0 0 50 50">
+          <use href="sprites.svg#whatsapp"></use>
+        </svg>
+      </a>
+    </div>
+
+  </div>
+
+  <header class="header">
+    <div class="header__slider-wrapper">
+      <div class="slider">
+        <!-- Контейнер для фоновых изображений -->
+        <div class="slider__background">
+          <div class="slide slide-1"></div>
+          <div class="slide slide-2"></div>
+          <div class="slide slide-3"></div>
+          <div class="slide slide-4"></div>
+          <div class="slide slide-5"></div>
+          <div class="slide slide-6"></div>
+          <div class="slide slide-7"></div>
+        </div>
+      </div>
+
+      <!-- Контент, который должен оставаться видимым -->
+      <div class="header__overlay container">
+        <!-- Логотип и бургер внутри контейнера -->
+        <div class="container header__top-container">
+          <div class="header__top">
+            <a href="/" class="header__logo">
+              <img src="img/logo.svg" alt="Логотип компании">
+            </a>
+            <button class="header__burger" aria-label="Открыть меню"></button>
+          </div>
+        </div>
+
+        <div class="header__content container">
+          <div class="header__content-social">
+            <a href="/contackt.html" class="btn-stroke">Обратный звонок</a>
+            <div class="header__bottom-social">
+              <a href="https://vk.com" class="btn-social">
+                <svg class="btn-social" viewBox="0 0 50 50">
+                  <use href="sprites.svg#vk"></use>
+                </svg>
+              </a>
+              <a href="https://dzen.ru" class="btn-social">
+                <svg class="btn-social" viewBox="0 0 50 50">
+                  <use href="sprites.svg#dzen"></use>
+                </svg>
+              </a>
+              <a href="https://whatsapp.com" class="btn-social">
+                <svg class="btn-social" viewBox="0 0 50 50">
+                  <use href="sprites.svg#whatsapp"></use>
+                </svg>
+              </a>
+            </div>
+            <div class="header__arrow-wrap">
+              <svg class="arrow-down" viewBox="0 0 56 54" width="56" height="54">
+                <use href="sprites.svg#arrow-down"></use>
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <section class="album-page">
+    <div class="container">
+      <h2 class="title-h2 songs-page__title">мои песни / prana</h2>
+
+      <div class="album-page__info-block">
+        <img class="album-page__img-album" src="img/albom/prana.jpg" alt="Прана">
+        <p class="main-text"></p>
+      </div>
+
+      
+        <div class="audio-player gold-card-style">
+
+          <audio id="audio-element" preload="metadata">
+            <source src="" type="audio/mp3">
+            Ваш браузер не поддерживает аудиоэлемент.
+          </audio>
+
+          <div class="player-controls">
+            <button class="btn-audio" id="prev-btn">⏮</button>
+            <button class="btn-audio" id="play-btn">▶</button>
+            <button class="btn-audio" id="next-btn">⏭</button>
+            <div class="progress-bar-container">
+              <progress id="progress-bar" value="0" max="100"></progress>
+            </div>
+            <div class="time-display">
+              <span id="current-time">0:00</span> / <span id="total-time">0:00</span>
+            </div>
+          </div>
+
+          <div class="track-list">
+            <ul>
+              <li data-audio="albums/prana/00.intro.mp3">Intro</li>
+              <li data-audio="albums/prana/01.From time to time.mp3">From time to time</li>
+              <li data-audio="albums/prana/02.Night.mp3">Night</li>
+              <li data-audio="albums/prana/03.Welcome to heaven.mp3">Welcome to heaven</li>
+              <li data-audio="albums/prana/04.TV-blues.mp3">TV-blues</li>
+              <li data-audio="albums/prana/05.Good evening.mp3">Good evening</li>
+              <li data-audio="albums/prana/06.Give a chance.mp3">06.Give a chance</li>
+            </ul>
+          </div>
+
+          <span id="current-track">Сейчас играет: </span>
+        </div>
+      
+    </div>
+
+    <button class="btn-stroke">Назад</button>
+  </section>
+  <footer class="footer__menu-text">
+    <div class="container">
+      <div class="footer__items">
+        <div class="footer__left">
+          <a href="/" class="footer__left-link">
+            <div class="footer__left-logo"></div>
+          </a>
+        </div>
+        <div class="footer__center">
+          <h2 class="title-h2 footer__title">РАЗДЕЛЫ САЙТА</h2>
+          <ul class="menu-style">
+            <a href="/about.html" class="footer__menu-link">
+              <li class="main-text menu-style footer__menu-text menu__text">Обо мне</li>
+            </a>
+            <a href="/gallery.html" class="footer__menu-link">
+              <li class="main-text menu-style footer__menu-text menu__text">Галерея</li>
+            </a>
+            <a href="/video.html" class="footer__menu-link">
+              <li class="main-text menu-style footer__menu-text menu__text">Видео</li>
+            </a>
+            <a href="/contackt.html" class="footer__menu-link">
+              <li class="main-text menu-style footer__menu-text menu__text">Контакты</li>
+            </a>
+          </ul>
+        </div>
+        <div class="footer__right">
+          <h2 class="title-h2 footer__title">СОЦИАЛЬНЫЕ СЕТИ</h2>
+          <div class="header__bottom-social">
+            <a href="https://vk.com" target="_blank">
+              <svg class="btn-social" viewBox="0 0 50 50">
+                <use href="sprites.svg#vk"></use>
+              </svg>
+            </a>
+            <a href="https://dzen.ru" class="btn-social">
+              <svg class="btn-social" viewBox="0 0 50 50">
+                <use href="sprites.svg#dzen"></use>
+              </svg>
+            </a>
+            <a href="https://whatsapp.com" class="btn-social">
+              <svg class="btn-social" viewBox="0 0 50 50">
+                <use href="sprites.svg#whatsapp"></use>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>

@@ -339,13 +339,11 @@ textarea {
 .header__bottom-social {
     display: inline-block;
     /* margin-right: 12px; /* расстояние между иконками */
-    */ text-decoration: none;
+    text-decoration: none;
     gap: 15px;
     /* Расстояние между иконками */
     z-index: 4;
 }
-
-
 
 .header__burger {
     width: 30px;

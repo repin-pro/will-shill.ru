@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
   <script defer src="js/scrypt.js"></script>
+  <script defer src="js/song.js"></script>
 </head>
 
 <body>
@@ -127,46 +128,45 @@
         <p class="main-text"></p>
       </div>
 
-      
-        <div class="audio-player gold-card-style">
+      <div class="audio-player gold-card-style">
+        <audio id="audio-element" preload="metadata">
+          <source src="" type="audio/mp3">
+          Ваш браузер не поддерживает аудиоэлемент.
+        </audio>
 
-          <audio id="audio-element" preload="metadata">
-            <source src="" type="audio/mp3">
-            Ваш браузер не поддерживает аудиоэлемент.
-          </audio>
-
-          <div class="player-controls">
-            <button class="btn-audio" id="prev-btn">⏮</button>
-            <button class="btn-audio" id="play-btn">▶</button>
-            <button class="btn-audio" id="next-btn">⏭</button>
-            <div class="progress-bar-container">
-              <progress id="progress-bar" value="0" max="100"></progress>
-            </div>
-            <div class="time-display">
-              <span id="current-time">0:00</span> / <span id="total-time">0:00</span>
-            </div>
+        <div class="player-controls">
+          <button class="btn-audio" id="prev-btn">⏮</button>
+          <button class="btn-audio" id="play-btn">▶</button>
+          <button class="btn-audio" id="next-btn">⏭</button>
+          <div class="progress-bar-container">
+            <progress id="progress-bar" value="0" max="100"></progress>
           </div>
-
-          <div class="track-list">
-            <ul>
-              <li data-audio="albums/prana/intro.mp3">Intro</li>
-              <li data-audio="albums/prana/from_time_to_time.mp3">From time to time</li>
-              <li data-audio="albums/prana/night.mp3">Night</li>
-              <li data-audio="albums/prana/welcome_to_heaven.mp3">Welcome to heaven</li>
-              <li data-audio="albums/prana/tv-blues.mp3">TV-blues</li>
-              <li data-audio="albums/prana/good_evening.mp3">Good evening</li>
-              <li data-audio="albums/prana/give_a_chance.mp3">Give a chance</li>
-            </ul>
+          <div class="time-display">
+            <span id="current-time">0:00</span> / <span id="total-time">0:00</span>
           </div>
-
-          <span id="current-track">Сейчас играет: </span>
         </div>
-      
+
+        <div class="track-list">
+          <ul>
+            <li data-audio="albums/prana/intro.mp3">Intro</li>
+            <li data-audio="albums/prana/from_time_to_time.mp3">From time to time</li>
+            <li data-audio="albums/prana/night.mp3">Night</li>
+            <li data-audio="albums/prana/welcome_to_heaven.mp3">Welcome to heaven</li>
+            <li data-audio="albums/prana/tv-blues.mp3">TV-blues</li>
+            <li data-audio="albums/prana/good_evening.mp3">Good evening</li>
+            <li data-audio="albums/prana/give_a_chance.mp3">Give a chance</li>
+          </ul>
+        </div>
+
+        <span id="current-track">Сейчас играет: </span>
+      </div>
+      <a href="songs.html" class="back-page-btn btn-stroke">Назад</a>
     </div>
 
-    <button class="btn-stroke">Назад</button>
+
   </section>
-  <footer class="footer__menu-text">
+  
+    <footer class="footer">
     <div class="container">
       <div class="footer__items">
         <div class="footer__left">
@@ -177,16 +177,19 @@
         <div class="footer__center">
           <h2 class="title-h2 footer__title">РАЗДЕЛЫ САЙТА</h2>
           <ul class="menu-style">
-            <a href="/about.html" class="footer__menu-link">
+            <a href="about.html" class="footer__menu-link">
               <li class="main-text menu-style footer__menu-text menu__text">Обо мне</li>
             </a>
-            <a href="/gallery.html" class="footer__menu-link">
+            <a href="gallery.html" class="footer__menu-link">
               <li class="main-text menu-style footer__menu-text menu__text">Галерея</li>
             </a>
-            <a href="/video.html" class="footer__menu-link">
+            <a href="songs.html" class="footer__menu-link">
+              <li class="main-text menu-style footer__menu-text menu__text">Мои песни</li>
+            </a>
+            <a href="video.html" class="footer__menu-link">
               <li class="main-text menu-style footer__menu-text menu__text">Видео</li>
             </a>
-            <a href="/contackt.html" class="footer__menu-link">
+            <a href="contackt.html" class="footer__menu-link">
               <li class="main-text menu-style footer__menu-text menu__text">Контакты</li>
             </a>
           </ul>

@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
   <script defer src="js/scrypt.js"></script>
+  <script defer src="js/main.js"></script>
 </head>
 
 <body>
@@ -91,7 +92,7 @@
           <div class="header__content-social">
             <a href="/contackt.html" class="btn-stroke">Обратный звонок</a>
             <div class="header__bottom-social">
-              <a href="https://vk.com" class="btn-social">
+              <a href="https://vk.ru/club35013292" class="btn-social">
                 <svg class="btn-social" viewBox="0 0 50 50">
                   <use href="sprites.svg#vk"></use>
                 </svg>
@@ -432,10 +433,8 @@
         <p class="main-text contact__text">Если у вас появились вопросы, пожалуйста заполните форму ниже и я с вами
           свяжусь!</p>
         <form class="contakt__form">
-          <input class="contakt__input" type="text" placeholder="Имя">
-
-          <input class="contakt__input" type="number" placeholder="Телефон">
-
+          <input class="contakt__input" type="text" placeholder="Имя" required>
+          <input class="contakt__input" type="number" placeholder="Телефон" required>
           <button class="contakt__submint btn-fill animate__fill-btn" type="submit">Отправить</button>
         </form>
       </div>
@@ -444,7 +443,7 @@
 
     </div>
   </section>
-  <footer class="footer__menu-text">
+  <footer class="footer">
     <div class="container">
       <div class="footer__items">
         <div class="footer__left">
@@ -455,16 +454,19 @@
         <div class="footer__center">
           <h2 class="title-h2 footer__title">РАЗДЕЛЫ САЙТА</h2>
           <ul class="menu-style">
-            <a href="/about.html" class="footer__menu-link">
+            <a href="about.html" class="footer__menu-link">
               <li class="main-text menu-style footer__menu-text menu__text">Обо мне</li>
             </a>
-            <a href="/gallery.html" class="footer__menu-link">
+            <a href="gallery.html" class="footer__menu-link">
               <li class="main-text menu-style footer__menu-text menu__text">Галерея</li>
             </a>
-            <a href="/video.html" class="footer__menu-link">
+            <a href="songs.html" class="footer__menu-link">
+              <li class="main-text menu-style footer__menu-text menu__text">Мои песни</li>
+            </a>
+            <a href="video.html" class="footer__menu-link">
               <li class="main-text menu-style footer__menu-text menu__text">Видео</li>
             </a>
-            <a href="/contackt.html" class="footer__menu-link">
+            <a href="contackt.html" class="footer__menu-link">
               <li class="main-text menu-style footer__menu-text menu__text">Контакты</li>
             </a>
           </ul>
@@ -472,7 +474,7 @@
         <div class="footer__right">
           <h2 class="title-h2 footer__title">СОЦИАЛЬНЫЕ СЕТИ</h2>
           <div class="header__bottom-social">
-            <a href="https://vk.com" target="_blank">
+            <a href="https://vk.ru/club35013292" target="_blank">
               <svg class="btn-social" viewBox="0 0 50 50">
                 <use href="sprites.svg#vk"></use>
               </svg>

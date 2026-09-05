@@ -1176,15 +1176,9 @@ textarea {
 
 .albums {
     display: flex;
-    justify-content: space-between;
     flex-wrap: wrap;
-
+    gap: 30px 10px;
 }
-
-.album:not(:last-child) {
-    margin-bottom: 50px;
-}
-
 
 .header__bottom-social a {
     display: inline-block;
@@ -1452,9 +1446,6 @@ textarea {
     background-color: #B7986A;
     /* Для Firefox */
 }
-
-
-
 
 /* album-page */
 .album-page__info-block {

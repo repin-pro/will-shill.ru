@@ -59,6 +59,65 @@
     </div>
 
   </div>
+
+  <header class="header">
+    <div class="header__slider-wrapper">
+      <div class="slider">
+        <!-- Контейнер для фоновых изображений -->
+        <div class="slider__background">
+          <div class="slide slide-1"></div>
+          <div class="slide slide-2"></div>
+          <div class="slide slide-3"></div>
+          <div class="slide slide-4"></div>
+          <div class="slide slide-5"></div>
+          <div class="slide slide-6"></div>
+          <div class="slide slide-7"></div>
+        </div>
+      </div>
+
+      <!-- Контент, который должен оставаться видимым -->
+      <div class="header__overlay container">
+        <!-- Логотип и бургер внутри контейнера -->
+        <div class="container header__top-container">
+          <div class="header__top">
+            <a href="index.html" class="header__logo">
+              <img src="img/logo.svg" alt="Логотип компании">
+            </a>
+            <button class="header__burger" aria-label="Открыть меню"></button>
+          </div>
+        </div>
+
+        <div class="header__content container">
+          <div class="header__content-social">
+            <a href="contackt.html" class="btn-stroke">Обратный звонок</a>
+            <div class="header__bottom-social">
+              <a href="https://vk.ru/club35013292" class="btn-social">
+                <svg class="btn-social" viewBox="0 0 50 50">
+                  <use href="sprites.svg#vk"></use>
+                </svg>
+              </a>
+              <a href="https://dzen.ru" class="btn-social">
+                <svg class="btn-social" viewBox="0 0 50 50">
+                  <use href="sprites.svg#dzen"></use>
+                </svg>
+              </a>
+              <a href="https://whatsapp.com" class="btn-social">
+                <svg class="btn-social" viewBox="0 0 50 50">
+                  <use href="sprites.svg#whatsapp"></use>
+                </svg>
+              </a>
+            </div>
+            <div class="header__arrow-wrap">
+              <svg class="arrow-down" viewBox="0 0 56 54" width="56" height="54">
+                <use href="sprites.svg#arrow-down"></use>
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
   <section class="songs-page">
     <div class="container">
       <h2 class="title-h2 songs-page__title">мои песни</h2>

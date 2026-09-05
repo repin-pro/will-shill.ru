@@ -38,6 +38,10 @@ button {
 
 img {
     max-width: 100%;
+    object-fit: fill;
+    box-sizing: border-box;
+    height: auto;
+
 }
 
 body {
@@ -114,22 +118,6 @@ textarea {
     transition: 0.8s;
 }
 
-@media (max-width: 480px) {
-    .btn-stroke {
-        padding: 8px 30px;
-        font-size: 14px;
-    }
-
-    .btn-social {
-        width: 35px;
-        height: 35px;
-    }
-
-    .header__bottom-social {
-        gap: 10px;
-    }
-}
-
 .title-h2 {
     color: #FFF;
 
@@ -162,7 +150,10 @@ textarea {
     line-height: 28px;
 }
 
-.menu-style {
+.menu-style,
+.header__bottom-social,
+.songs__cards,
+.gallery__cards {
     list-style: none;
     padding: 0;
     margin: 0;
@@ -266,17 +257,21 @@ textarea {
 
 }
 
-
-.menu__text:hover {
-    color: #E9B870;
-}
-
 .menu__closed:hover {
     width: 13px;
     height: 14px;
 }
 
 .btn-more:hover {
+    color: #E9B870;
+}
+
+.white-text-animation {
+    transition: 0.8s;
+    cursor: pointer;
+}
+
+.white-text-animation:hover {
     color: #E9B870;
 }
 
@@ -336,15 +331,6 @@ textarea {
     overflow: hidden;
 }
 
-.header__bottom-social {
-    display: inline-block;
-    /* margin-right: 12px; /* расстояние между иконками */
-    text-decoration: none;
-    gap: 15px;
-    /* Расстояние между иконками */
-    z-index: 4;
-}
-
 .header__burger {
     width: 30px;
     height: 24px;
@@ -365,32 +351,6 @@ textarea {
     box-sizing: border-box;
     padding-top: 50px;
 }
-
-/* Для мобильных */
-@media (max-width: 768px) {
-    .header__burger {
-        display: block;
-    }
-}
-
-@media (max-width: 768px) {
-    .container {
-        width: 90%;
-        padding: 0 15px;
-    }
-
-    .gallery__cards,
-    .songs__cards {
-        flex-wrap: wrap;
-    }
-
-    .video__card {
-        width: 100%;
-        margin-bottom: 20px;
-    }
-}
-
-
 
 .header__slider {
     position: absolute;
@@ -458,52 +418,6 @@ textarea {
     flex-direction: column;
 }
 
-/* Для мобильных: уменьшаем отступы */
-@media (max-width: 768px) {
-    .header__content {
-        padding: 0 10px;
-    }
-}
-
-@media (max-width: 768px) {
-    .header__top-container {
-        padding: 0 10px;
-        /* Уменьшаем отступы */
-    }
-
-
-    .header__top {
-        padding: 0 10px;
-    }
-
-    .header__logo {
-        height: 32px;
-    }
-
-    .header__burger {
-        width: 28px;
-        height: 22px;
-    }
-}
-
-@media (max-width: 480px) {
-    .header__top-container {
-        padding: 0 8px;
-    }
-
-    .header__top {
-        padding: 0 8px;
-    }
-
-    .header__logo {
-        height: 28px;
-    }
-
-    .header__burger {
-        width: 26px;
-        height: 20px;
-    }
-}
 
 /* header */
 
@@ -538,9 +452,6 @@ textarea {
     text-align: center;
 }
 
-
-
-
 .arrow-down {
     display: block;
     width: 56px;
@@ -554,7 +465,6 @@ textarea {
 .header__arrow-wrap {
     position: relative;
     bottom: 20px;
-
     z-index: 4;
 }
 
@@ -582,15 +492,6 @@ textarea {
     /* Плавный переход */
 }
 
-.menu__text {
-    color: #FFF;
-    font-family: "IBM Plex Sans";
-    font-size: 20px;
-    line-height: 28px;
-    margin-bottom: 10px;
-    transition: 0.8s;
-}
-
 .menu.active {
     transform: translateX(0);
     /* Показать меню */
@@ -599,7 +500,6 @@ textarea {
 .menu__top-wrap {
     display: flex;
     justify-content: space-between;
-
 }
 
 .menu__closed {
@@ -613,7 +513,6 @@ textarea {
     transition: 0.5s;
 }
 
-
 .slider {
     position: absolute;
     top: 0;
@@ -622,10 +521,7 @@ textarea {
     height: 100%;
     display: flex;
     overflow: hidden;
-
 }
-
-
 
 .header__top {
     display: flex;
@@ -647,11 +543,6 @@ textarea {
     height: 40px;
 }
 
-
-.btn-social:not(:last-child) {
-    margin-right: 15px;
-}
-
 /* about */
 
 
@@ -660,26 +551,24 @@ textarea {
 }
 
 .about__photo {
-    margin-right: 30px;
+    object-fit: cover;
 }
 
 .about__content {
     display: flex;
+    gap: 20px;
 }
 
 /* gallery */
 
 .gallery__cards {
     display: flex;
+    gap: 30px;
 }
 
 .gallery__card {
     width: 410px;
     padding: 20px;
-}
-
-.gallery__card:not(:last-child) {
-    margin-right: 30px;
 }
 
 .gallery__card-img {
@@ -713,14 +602,11 @@ textarea {
     display: flex;
     overflow: hidden;
     margin-bottom: 50px;
+    gap: 13px;
 }
 
 .songs__card-img {
     min-width: 300px;
-}
-
-.songs__card:not(:last-child) {
-    margin-right: 30px;
 }
 
 .songs__card-btn {
@@ -752,7 +638,6 @@ textarea {
     width: 630px;
 }
 
-
 .video__card-logo {
     width: 193px;
     height: 127px;
@@ -762,7 +647,6 @@ textarea {
     background-image: url("../img/logo-video.svg");
     margin-bottom: 20px;
     display: block;
-    /* Добавляем display: block */
 }
 
 .video__card-title {
@@ -773,8 +657,6 @@ textarea {
     font-style: normal;
     font-weight: 500;
     line-height: 40px;
-
-
 }
 
 .video__overlay {
@@ -789,7 +671,6 @@ textarea {
     justify-content: center;
     align-items: center;
     transition: opacity 0.4s ease;
-
 }
 
 .video__card:hover .video__overlay {
@@ -828,9 +709,6 @@ textarea {
 .video__card:hover .video__overlay {
     opacity: 0;
 }
-
-
-
 
 /* contakt */
 
@@ -1104,7 +982,6 @@ textarea {
     height: auto;
     display: block;
     cursor: pointer;
-    /* Добавляем курсор для клика */
 }
 
 /* footer */
@@ -1180,19 +1057,19 @@ textarea {
     gap: 30px 10px;
 }
 
-.header__bottom-social a {
+.header__bottom-social {
+    display: flex;
+    /* margin-right: 12px; /* расстояние между иконками */
+    text-decoration: none;
+    gap: 30px;
+    /* Расстояние между иконками */
+    z-index: 4;
+}
+
+.header__bottom-social-link {
     display: inline-block;
-    margin-right: 12px;
-    /* расстояние между иконками */
     text-decoration: none;
 }
-
-.header__bottom-social a:last-child {
-    margin-right: 0;
-    /* убрать отступ у последней иконки */
-}
-
-
 
 /* gallery-page */
 
@@ -1249,26 +1126,6 @@ textarea {
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
-
-/* Адаптивность */
-@media (max-width: 1200px) {
-    .gallery-column {
-        width: 31%;
-    }
-}
-
-@media (max-width: 992px) {
-    .gallery-column {
-        width: 48%;
-    }
-}
-
-@media (max-width: 768px) {
-    .gallery-column {
-        width: 100%;
-    }
-}
-
 
 /* увеличение фото */
 
@@ -1339,17 +1196,6 @@ textarea {
     overflow: hidden;
 }
 
-@media (max-width: 768px) {
-    .image-overlay__image {
-        max-width: 95%;
-        max-height: 95%;
-        margin: 10px;
-    }
-
-    .image-overlay__wrapper {
-        padding: 20px;
-    }
-}
 
 /* аудио плеер */
 .btn-audio {
@@ -1455,4 +1301,160 @@ textarea {
 
 .album-page__img-album {
     margin-right: 140px;
+}
+
+
+
+/* Адаптивность */
+@media (max-width: 1200px) {
+    .gallery-column {
+        width: 31%;
+    }
+}
+
+@media (max-width: 992px) {
+    .gallery-column {
+        width: 48%;
+    }
+
+    .about__content {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .title__link {
+        align-self: center;
+       
+    }
+
+    .songs__cards {
+        width: 86%;
+        align-self: center;
+    }
+
+    .gallery__cards {
+        flex-wrap: wrap;
+        justify-content: center;
+
+    }
+
+    .gallery__card {
+        width: 86%;
+    }
+
+    .title-link-more {
+        display: none;
+    }
+
+    .title-top-cont {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .video__cards {
+        justify-content: center;
+    }
+
+    .contact__set-wrap {
+        flex-direction: column-reverse;
+        align-items: center;
+        gap: 70px;
+        
+    }
+}
+
+
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+        padding: 0 15px;
+    }
+
+
+
+    .gallery__cards,
+    .songs__cards {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+
+
+    .video__card {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .header__burger {
+        display: block;
+    }
+
+    .gallery-column {
+        width: 100%;
+    }
+
+    .image-overlay__image {
+        max-width: 95%;
+        max-height: 95%;
+        margin: 10px;
+    }
+
+    .image-overlay__wrapper {
+        padding: 20px;
+    }
+
+    .header__top-container {
+        padding: 0 10px;
+        /* Уменьшаем отступы */
+    }
+
+    .header__top {
+        padding: 0 10px;
+    }
+
+    .header__logo {
+        height: 32px;
+    }
+
+    .header__burger {
+        width: 28px;
+        height: 22px;
+    }
+
+    .header__content {
+        padding: 0 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .header__top-container {
+        padding: 0 8px;
+    }
+
+    .header__top {
+        padding: 0 8px;
+    }
+
+    .header__logo {
+        height: 28px;
+    }
+
+    .header__burger {
+        width: 26px;
+        height: 20px;
+    }
+
+    .btn-stroke {
+        padding: 8px 30px;
+        font-size: 14px;
+    }
+
+    .btn-social {
+        width: 35px;
+        height: 35px;
+    }
+
+    .header__bottom-social {
+        gap: 10px;
+    }
 }

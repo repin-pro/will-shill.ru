@@ -23,41 +23,49 @@
     </div>
 
     <ul class="menu-style">
-      <li class="main-text menu__text">
+      <li class="main-text white-text-animation">
         <a href="about.html" class="footer__menu-link">Обо мне</a>
       </li>
-      <li class="main-text menu__text">
+      <li class="main-text white-text-animation">
         <a href="gallery.html" class="footer__menu-link">Галерея</a>
       </li>
-      <li class="main-text menu__text">
+      <li class="main-text white-text-animation">
         <a href="songs.html" class="footer__menu-link">Мои песни</a>
       </li>
-      <li class="main-text menu__text">
+      <li class="main-text white-text-animation">
         <a href="video.html" class="footer__menu-link">Видео</a>
       </li>
-      <li class="main-text menu__text">
+      <li class="main-text white-text-animation">
         <a href="contackt.html" class="footer__menu-link">Контакты</a>
       </li>
     </ul>
 
-
-    <div class="header__bottom-social">
-      <a href="https://vk.com" class="btn-social">
-        <svg class="btn-social" viewBox="0 0 50 50">
-          <use href="sprites.svg#vk"></use>
-        </svg>
-      </a>
-      <a href="https://dzen.ru" class="btn-social">
-        <svg class="btn-social" viewBox="0 0 50 50">
-          <use href="sprites.svg#dzen"></use>
-        </svg>
-      </a>
-      <a href="https://whatsapp.com" class="btn-social">
-        <svg class="btn-social" viewBox="0 0 50 50">
-          <use href="sprites.svg#whatsapp"></use>
-        </svg>
-      </a>
-    </div>
+    <ul class="header__bottom-social">
+      <li class="header__bottom-social-list">
+        <a class="header__bottom-social-link" href="https://vk.ru/club35013292" aria-label="ВКонтакте" target="_blank">
+          <svg class="btn-social" viewBox="0 0 50 50">
+            <use href="sprites.svg#vk"></use>
+          </svg>
+        </a>
+      </li>
+      <li class="header__bottom-social-list">
+        <a class="header__bottom-social-link" href="https://dzen.ru/id/64ad271313ff8216f10c7faf" aria-label="Дзен"
+          target="_blank">
+          <svg class="btn-social" viewBox="0 0 50 50">
+            <use href="sprites.svg#dzen"></use>
+          </svg>
+        </a>
+      </li>
+      <li class="header__bottom-social-list">
+        <a class="header__bottom-social-link"
+          href="https://max.ru/u/f9LHodD0cOLLGyQmQoLq6-svdly1-G2yXFyvW3MHEe_JWJzoySJHfmygBRc"
+          aria-label="Написать в MAX" target="_blank">
+          <svg class="btn-social" viewBox="0 0 50 50">
+            <use href="sprites.svg#max"></use>
+          </svg>
+        </a>
+      </li>
+    </ul>
 
   </div>
 
@@ -90,24 +98,33 @@
 
         <div class="header__content container">
           <div class="header__content-social">
-            <a href="contackt.html" class="btn-stroke">Обратный звонок</a>
-            <div class="header__bottom-social">
-              <a href="https://vk.ru/club35013292" class="btn-social">
-                <svg class="btn-social" viewBox="0 0 50 50">
-                  <use href="sprites.svg#vk"></use>
-                </svg>
-              </a>
-              <a href="https://dzen.ru" class="btn-social">
-                <svg class="btn-social" viewBox="0 0 50 50">
-                  <use href="sprites.svg#dzen"></use>
-                </svg>
-              </a>
-              <a href="https://whatsapp.com" class="btn-social">
-                <svg class="btn-social" viewBox="0 0 50 50">
-                  <use href="sprites.svg#whatsapp"></use>
-                </svg>
-              </a>
-            </div>
+            <a href="contackt.html" class="btn-stroke" target="_blank">Обратный звонок</a>
+            <ul class="header__bottom-social">
+              <li class="header__bottom-social-list">
+                <a class="header__bottom-social-link" href="https://vk.ru/club35013292" aria-label="ВКонтакте"
+                  target="_blank">
+                  <svg class="btn-social" viewBox="0 0 50 50">
+                    <use href="sprites.svg#vk"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="header__bottom-social-list">
+                <a class="header__bottom-social-link" href="https://dzen.ru/id/64ad271313ff8216f10c7faf"
+                  aria-label="Дзен" target="_blank">
+                  <svg class="btn-social" viewBox="0 0 50 50">
+                    <use href="sprites.svg#dzen"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="header__bottom-social-list">
+                <a href="https://max.ru/u/f9LHodD0cOLLGyQmQoLq6-svdly1-G2yXFyvW3MHEe_JWJzoySJHfmygBRc"
+                  class="header__bottom-social-link" aria-label="Написать в MAX" target="_blank">
+                  <svg class="btn-social" viewBox="0 0 50 50">
+                    <use href="sprites.svg#max"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
             <div class="header__arrow-wrap">
               <svg class="arrow-down" viewBox="0 0 56 54" width="56" height="54">
                 <use href="sprites.svg#arrow-down"></use>
@@ -121,12 +138,13 @@
 
   <section class="about">
     <div class="container">
-      <a href="#" name="about" class="title__link main-title__set">
-        <h2 class="title-h2">обо мне</h2>
+      <a class="title__link main-title__set" href="#" name="about">
+        <h2 class="title-h2 white-text-animation">обо мне</h2>
       </a>
 
       <div class="about__content">
-        <img src="img/mv-photo.jpg" class="about__photo gold-card-style" alt="Фотография Михаила Вяльшина">
+        <img src="img/mv-photo.jpg" class="about__photo gold-card-style"
+          alt="Портрет художника Михаила Вяльшина: мужчина с длинными волосами и в тёмных очках позирует с белой электрогитарой; на грифе инструмента — яркие наклейки, на фоне — фактурная тёмно‑серая декорация и фрагмент зелёного растения справа">
         <div class="about__content-text">
           <p class="main-text">Родился в&nbsp;Москве, 9&nbsp;октября 1958г., и&nbsp;до&nbsp;сих пор обожаю
             вспоминать&nbsp;и, по&nbsp;возможности,
@@ -155,11 +173,11 @@
   </section>
   <section class="gallery">
     <div class="container">
-      <a href="#" class="title__link main-title__set">
-        <h2 class="title-h2">галерея</h2>
+      <a href="gallery.html" class="title__link main-title__set">
+        <h2 class="title-h2 white-text-animation">галерея</h2>
       </a>
-      <div class="gallery__cards">
-        <div class="gallery__card gold-card-style">
+      <ul class="gallery__cards">
+        <li class="gallery__card gold-card-style">
           <img src="img/gallery.jpg" class="gallery__card-img" alt="Галерея">
           <h3 class="title-h3 gallery__card-title">Галерея</h3>
           <p class="main-text gallery__card-text">В&nbsp;разделе &laquo;Галерея&raquo; мне хочется,
@@ -167,79 +185,77 @@
             Вас с&nbsp;графикой, точнее, с&nbsp;теми рисунками, которые делаются на&nbsp;хорошей бумаге, в&nbsp;неплохом
             настроении, без суеты ...</p>
           <a href="gallery.html" class="btn-more">Подробнее >></a>
-        </div>
-        <div class="gallery__card gold-card-style">
+        </li>
+        <li class="gallery__card gold-card-style">
           <img src="img/poems.jpg" class="gallery__card-img" alt="Сихи">
           <h3 class="title-h3 gallery__card-title">Стихи</h3>
           <p class="main-text gallery__card-text">Раздел &quot;Мои стихи отведен под рукописные тексты. Признаюсь, очень
             хочется при жизни! Аккуратно расписаться под самим&nbsp;же собой сочинёнными и&nbsp;таки исполненными
             собственными стихами</p>
           <a href="gallery.html" class="btn-more">Подробнее >></a>
-        </div>
-        <div class="gallery__card gold-card-style">
+        </li>
+        <li class="gallery__card gold-card-style">
           <img src="img/frescoes.jpg" class="gallery__card-img" alt="Фрески">
           <h3 class="title-h3 gallery__card-title">Фрески</h3>
           <p class="main-text gallery__card-text">Это блок, который описывает мои работы в&nbsp;области фресок.
             Я&nbsp;специализируюсь на&nbsp;создании уникальных и&nbsp;высококачественных фресок для различных помещений
             и&nbsp;интерьеров.</p>
           <a href="gallery.html" class="btn-more">Подробнее >></a>
-        </div>
-      </div>
+        </li>
+      </ul>
     </div>
   </section>
   <section class="songs">
     <div class="container">
       <div class="title-top-cont">
-        <a href="#" class="title__link main-title__set">
-          <h2 class="title-h2">мои песни</h2>
+        <a href="songs.html" class="title__link main-title__set">
+          <h2 class="title-h2 white-text-animation">мои песни</h2>
         </a>
-        <button class="btn-more">Смотреть все >></button>
+        <button class="title-link-more btn-more">Смотреть все >></button>
       </div>
-      <div class="songs__cards">
-        <div class="songs__card">
+      <ul class="songs__cards">
+        <li class="songs__card">
           <a href="#" class="songs__card-link">
             <img class="songs__card-img" src="img/albom/13_stories.jpg" alt="13 Историй">
           </a>
-        </div>
+        </li>
 
-        <div class="songs__card">
+        <li class="songs__card">
           <a href="#" class="songs__card-link">
             <img class="songs__card-img" src="img/albom/Austrian_law.jpg" alt="13 Историй">
           </a>
-        </div>
+        </li>
 
-        <div class="songs__card">
+        <li class="songs__card">
           <a href="#" class="songs__card-link">
             <img class="songs__card-img" src="img/albom/Irene.jpg" alt="13 Историй">
           </a>
-        </div>
+        </li>
 
-        <div class="songs__card">
+        <li class="songs__card">
           <a href="#" class="songs__card-link">
             <img class="songs__card-img" src="img/albom/Margot.jpg" alt="13 Историй">
           </a>
-        </div>
+        </li>
 
-        <div class="songs__card">
+        <li class="songs__card">
           <a href="#" class="songs__card-link">
             <img class="songs__card-img" src="img/albom/pawnshop.jpg" alt="13 Историй">
           </a>
-        </div>
+        </li>
 
-        <div class="songs__card">
+        <li class="songs__card">
           <a href="#" class="songs__card-link">
             <img class="songs__card-img" src="img/albom/prana.jpg" alt="13 Историй">
           </a>
-        </div>
+        </li>
 
-        <div class="songs__card">
+        <li class="songs__card">
           <a href="#" class="songs__card-link">
             <img class="songs__card-img" src="img/albom/shadow_on_guitar.jpg" alt="13 Историй">
           </a>
-        </div>
-
-
-      </div>
+        </li>
+      </ul>
       <div class="songs__card-btn">
         <button class="song-left btn-left btn-arrow"></button>
         <button class="song-right btn-right btn-arrow"></button>
@@ -250,10 +266,10 @@
   <section class="video">
     <div class="container">
       <div class="title-top-cont">
-        <a href="#" class="title__link main-title__set">
-          <h2 class="title-h2">видео</h2>
+        <a class="title-link" href="video.html">
+          <h2 class="title-h2 white-text-animation">видео</h2>
         </a>
-        <button class="btn-more">Смотреть все >></button>
+        <button class="title-link-more btn-more">Смотреть все >></button>
       </div>
       <div class="video__cards">
         <div class="video__card video__card-size ">
@@ -427,20 +443,25 @@
     </div>
   </section>
   <section class="contakt">
-    <div class="container contact__set-wrap">
-      <div class="contact__form-wrap">
-        <h2 class="title-h2 contakt__title">контакты</h2>
-        <p class="main-text contact__text">Если у вас появились вопросы, пожалуйста заполните форму ниже и я с вами
-          свяжусь!</p>
-        <form class="contakt__form">
-          <input class="contakt__input" type="text" placeholder="Имя" required>
-          <input class="contakt__input" type="number" placeholder="Телефон" required>
-          <button class="contakt__submint btn-fill animate__fill-btn" type="submit">Отправить</button>
-        </form>
+    <div class="container">
+      <div class="title-top-cont">
+      <a class="title-link" href="contackt.html">
+        <h2 class="title-h2 contakt__title white-text-animation">контакты</h2>
+      </a>
       </div>
-      <div class="mail-img"></div>
-      <div class="contact__flesh"></div>
-
+      <div class="contact__set-wrap">
+        <div class="contact__form-wrap">
+          <p class="main-text contact__text">Если у вас появились вопросы, пожалуйста заполните форму ниже и я с вами
+            свяжусь!</p>
+          <form class="contakt__form">
+            <input class="contakt__input" type="text" placeholder="Имя" required>
+            <input class="contakt__input" type="number" placeholder="Телефон" required>
+            <button class="contakt__submint btn-fill animate__fill-btn" type="submit">Отправить</button>
+          </form>
+        </div>
+        <div class="mail-img"></div>
+        <div class="contact__flesh"></div>
+      </div>
     </div>
   </section>
   <footer class="footer">
@@ -455,19 +476,19 @@
           <h2 class="title-h2 footer__title">РАЗДЕЛЫ САЙТА</h2>
           <ul class="menu-style">
             <a href="about.html" class="footer__menu-link">
-              <li class="main-text menu-style footer__menu-text menu__text">Обо мне</li>
+              <li class="main-text menu-style footer__menu-text white-text-animation">Обо мне</li>
             </a>
             <a href="gallery.html" class="footer__menu-link">
-              <li class="main-text menu-style footer__menu-text menu__text">Галерея</li>
+              <li class="main-text menu-style footer__menu-text white-text-animation">Галерея</li>
             </a>
             <a href="songs.html" class="footer__menu-link">
-              <li class="main-text menu-style footer__menu-text menu__text">Мои песни</li>
+              <li class="main-text menu-style footer__menu-text white-text-animation">Мои песни</li>
             </a>
             <a href="video.html" class="footer__menu-link">
-              <li class="main-text menu-style footer__menu-text menu__text">Видео</li>
+              <li class="main-text menu-style footer__menu-text white-text-animation">Видео</li>
             </a>
             <a href="contackt.html" class="footer__menu-link">
-              <li class="main-text menu-style footer__menu-text menu__text">Контакты</li>
+              <li class="main-text menu-style footer__menu-text white-text-animation">Контакты</li>
             </a>
           </ul>
         </div>

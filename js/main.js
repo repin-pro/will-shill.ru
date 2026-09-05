@@ -32,43 +32,53 @@ document.addEventListener('DOMContentLoaded', function () {
 /* слайдер видео карточек */
 
 document.addEventListener('DOMContentLoaded', () => {
-    const cards = document.querySelectorAll('.video__cards .video__card');
-    const leftBtn = document.querySelector('.video-left');
-    const rightBtn = document.querySelector('.video-right');
-    let currentIndex = 0;
+  const cards = document.querySelectorAll('.video__cards .video__card');
+  const leftBtn = document.querySelector('.video-left');
+  const rightBtn = document.querySelector('.video-right');
+  let currentIndex = 0;
+  let visibleCount = 2; // сколько карточек видно
 
-    // Изначальная видимость только первых двух карточек
-    cards.forEach((card, index) => {
-        if (index >= 2) {
-            card.style.display = 'none';
-        }
-    });
+  function updateVisibleCount() {
+    visibleCount = window.innerWidth <= 992 ? 1 : 2;
+  }
 
-    function showCards(index) {
-        // Скрываем все карточки
-        cards.forEach(card => card.style.display = 'none');
+  function showCards(index) {
+    cards.forEach(card => card.style.display = 'none');
 
-        // Нормализуем индекс для циклического перехода
-        let normalizedIndex = index % cards.length;
-        if (normalizedIndex < 0) {
-            normalizedIndex += cards.length;
-        }
-
-        // Показываем две активные
-        cards[normalizedIndex].style.display = 'flex';
-        cards[(normalizedIndex + 1) % cards.length].style.display = 'flex';
-        currentIndex = normalizedIndex;
+    let normalizedIndex = index % cards.length;
+    if (normalizedIndex < 0) {
+      normalizedIndex += cards.length;
     }
 
-    // Обработчики кликов
+    for (let i = 0; i < visibleCount; i++) {
+      const cardIndex = (normalizedIndex + i) % cards.length;
+      cards[cardIndex].style.display = 'flex';
+    }
+
+    currentIndex = normalizedIndex;
+  }
+
+  // Инициализация
+  updateVisibleCount();
+  showCards(0);
+
+  // Реакция на ресайз окна
+  window.addEventListener('resize', () => {
+    updateVisibleCount();
+    showCards(currentIndex);
+  });
+
+  // Обработчики кликов
+  if (leftBtn) {
     leftBtn.addEventListener('click', () => {
-        showCards(currentIndex - 1);
+      showCards(currentIndex - 1);
     });
+  }
 
+  if (rightBtn) {
     rightBtn.addEventListener('click', () => {
-        showCards(currentIndex + 1);
+      showCards(currentIndex + 1);
     });
-
-    // Начальная инициализация
-    showCards(0);
+  }
 });
+

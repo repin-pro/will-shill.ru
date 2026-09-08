@@ -193,24 +193,14 @@ textarea {
     height: 45px;
     background-color: transparent;
     border: none;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
     cursor: pointer;
-    fill: #65553D;
     transition: 0.8s;
 }
 
-.btn-arrow:not(:last-child) {
-    margin-right: 15px;
-}
-
-.btn-left {
-    background-image: url("../img/arrow-left.svg");
-}
-
-.btn-right {
-    background-image: url("../img/arrow-right.svg");
+.song-left,
+.video-left {
+    background-color: inherit;
+    border: none;
 }
 
 .btn-fill {
@@ -241,20 +231,14 @@ textarea {
     background: #B7986A;
 }
 
-.btn-social {
+.icon-animation {
     fill: #B7986A;
     transition: 0.8s;
 }
 
-.btn-social:hover {
+.icon-animation:hover {
     filter: drop-shadow(0px 0px 50px rgba(233, 184, 112, 0.20));
     fill: #E9B870;
-}
-
-.btn-arrow:hover {
-    filter: drop-shadow(0px 0px 50px rgba(233, 184, 112, 0.20));
-    fill: #B7986A;
-
 }
 
 .menu__closed:hover {
@@ -609,9 +593,10 @@ textarea {
     min-width: 300px;
 }
 
-.songs__card-btn {
+.arrow-wrap {
     display: flex;
     justify-content: center;
+    gap: 15px;
 }
 
 /* video */
@@ -780,19 +765,6 @@ textarea {
     justify-content: space-between;
 }
 
-.contact__flesh {
-    background-image: url("../img/flash.svg");
-    width: 541px;
-    height: 543px;
-    flex-shrink: 0;
-    position: absolute;
-    border-radius: 543px;
-    background: rgba(141, 96, 28, 0.15);
-    mix-blend-mode: lighten;
-    filter: blur(79px);
-    right: 500px;
-}
-
 .btn-form {
     border-radius: 30px;
     border: 1px solid rgba(255, 255, 255, 0.20);
@@ -860,6 +832,24 @@ textarea {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    position: relative;
+    z-index: -1;
+}
+
+.mail-img::after {
+    content: "";
+    background-image: url("../img/flash.svg");
+    width: 541px;
+    height: 543px;
+    flex-shrink: 0;
+    position: absolute;
+    border-radius: 543px;
+    background: rgba(141, 96, 28, 0.15);
+    mix-blend-mode: lighten;
+    filter: blur(79px);
+    top: 50px;
+    right: 50px;
+
 }
 
 .contakt-page__wrap {
@@ -991,10 +981,6 @@ textarea {
     margin-top: 100px;
 }
 
-.footer__right {
-    max-width: 30%;
-}
-
 .footer__items {
     display: flex;
     justify-content: space-between;
@@ -1068,9 +1054,7 @@ textarea {
     flex-wrap: wrap;
 }
 
-.social-button-list {
-   
-}
+.social-button-list {}
 
 .social-button-link {
     display: block;

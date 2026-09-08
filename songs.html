@@ -11,7 +11,7 @@
 </head>
 
 <body>
-  <div class="menu">
+   <div class="menu">
     <div class="menu__cont">
       <div class="menu__top-wrap">
         <a href="index.html" class="header__logo">
@@ -22,41 +22,49 @@
     </div>
 
     <ul class="menu-style">
-      <li class="main-text menu__text">
+      <li class="main-text white-text-animation">
         <a href="about.html" class="footer__menu-link">Обо мне</a>
       </li>
-      <li class="main-text menu__text">
+      <li class="main-text white-text-animation">
         <a href="gallery.html" class="footer__menu-link">Галерея</a>
       </li>
-      <li class="main-text menu__text">
+      <li class="main-text white-text-animation">
         <a href="songs.html" class="footer__menu-link">Мои песни</a>
       </li>
-      <li class="main-text menu__text">
+      <li class="main-text white-text-animation">
         <a href="video.html" class="footer__menu-link">Видео</a>
       </li>
-      <li class="main-text menu__text">
+      <li class="main-text white-text-animation">
         <a href="contackt.html" class="footer__menu-link">Контакты</a>
       </li>
     </ul>
 
-
-    <div class="header__bottom-social">
-      <a href="https://vk.com" class="btn-social">
-        <svg class="btn-social" viewBox="0 0 50 50">
-          <use href="sprites.svg#vk"></use>
-        </svg>
-      </a>
-      <a href="https://dzen.ru" class="btn-social">
-        <svg class="btn-social" viewBox="0 0 50 50">
-          <use href="sprites.svg#dzen"></use>
-        </svg>
-      </a>
-      <a href="https://whatsapp.com" class="btn-social">
-        <svg class="btn-social" viewBox="0 0 50 50">
-          <use href="sprites.svg#whatsapp"></use>
-        </svg>
-      </a>
-    </div>
+    <ul class="social-button">
+      <li class="social-button-list">
+        <a class="social-button-link" href="https://vk.ru/club35013292" aria-label="ВКонтакте" target="_blank">
+          <svg class="btn-social icon-animation" viewBox="0 0 50 50">
+            <use href="sprites.svg#vk"></use>
+          </svg>
+        </a>
+      </li>
+      <li class="social-button-list">
+        <a class="social-button-link" href="https://dzen.ru/id/64ad271313ff8216f10c7faf" aria-label="Дзен"
+          target="_blank">
+          <svg class="btn-social icon-animation" viewBox="0 0 50 50">
+            <use href="sprites.svg#dzen"></use>
+          </svg>
+        </a>
+      </li>
+      <li class="social-button-list">
+        <a class="social-button-link"
+          href="https://max.ru/u/f9LHodD0cOLLGyQmQoLq6-svdly1-G2yXFyvW3MHEe_JWJzoySJHfmygBRc"
+          aria-label="Написать в MAX" target="_blank">
+          <svg class="btn-social icon-animation" viewBox="0 0 50 50">
+            <use href="sprites.svg#max"></use>
+          </svg>
+        </a>
+      </li>
+    </ul>
 
   </div>
 
@@ -89,24 +97,33 @@
 
         <div class="header__content container">
           <div class="header__content-social">
-            <a href="contackt.html" class="btn-stroke">Обратный звонок</a>
-            <div class="header__bottom-social">
-              <a href="https://vk.ru/club35013292" class="btn-social">
-                <svg class="btn-social" viewBox="0 0 50 50">
-                  <use href="sprites.svg#vk"></use>
-                </svg>
-              </a>
-              <a href="https://dzen.ru" class="btn-social">
-                <svg class="btn-social" viewBox="0 0 50 50">
-                  <use href="sprites.svg#dzen"></use>
-                </svg>
-              </a>
-              <a href="https://whatsapp.com" class="btn-social">
-                <svg class="btn-social" viewBox="0 0 50 50">
-                  <use href="sprites.svg#whatsapp"></use>
-                </svg>
-              </a>
-            </div>
+            <a href="contackt.html" class="btn-stroke" target="_blank">Обратный звонок</a>
+            <ul class="social-button">
+              <li class="social-button-list">
+                <a class="social-button-link" href="https://vk.ru/club35013292" aria-label="ВКонтакте" target="_blank">
+                  <svg class="btn-social icon-animation" viewBox="0 0 50 50">
+                    <use href="sprites.svg#vk"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social-button-list">
+                <a class="social-button-link" href="https://dzen.ru/id/64ad271313ff8216f10c7faf" aria-label="Дзен"
+                  target="_blank">
+                  <svg class="btn-social icon-animation" viewBox="0 0 50 50">
+                    <use href="sprites.svg#dzen"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social-button-list">
+                <a class="social-button-link"
+                  href="https://max.ru/u/f9LHodD0cOLLGyQmQoLq6-svdly1-G2yXFyvW3MHEe_JWJzoySJHfmygBRc"
+                  aria-label="Написать в MAX" target="_blank">
+                  <svg class="btn-social icon-animation" viewBox="0 0 50 50">
+                    <use href="sprites.svg#max"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
             <div class="header__arrow-wrap">
               <svg class="arrow-down" viewBox="0 0 56 54" width="56" height="54">
                 <use href="sprites.svg#arrow-down"></use>
@@ -177,7 +194,7 @@
     </div>
 
   </section>
-  <footer class="footer">
+   <footer class="footer">
     <div class="container">
       <div class="footer__items">
         <div class="footer__left">
@@ -189,41 +206,50 @@
           <h2 class="title-h2 footer__title">РАЗДЕЛЫ САЙТА</h2>
           <ul class="menu-style">
             <a href="about.html" class="footer__menu-link">
-              <li class="main-text menu-style footer__menu-text menu__text">Обо мне</li>
+              <li class="main-text menu-style footer__menu-text white-text-animation">Обо мне</li>
             </a>
             <a href="gallery.html" class="footer__menu-link">
-              <li class="main-text menu-style footer__menu-text menu__text">Галерея</li>
+              <li class="main-text menu-style footer__menu-text white-text-animation">Галерея</li>
             </a>
             <a href="songs.html" class="footer__menu-link">
-              <li class="main-text menu-style footer__menu-text menu__text">Мои песни</li>
+              <li class="main-text menu-style footer__menu-text white-text-animation">Мои песни</li>
             </a>
             <a href="video.html" class="footer__menu-link">
-              <li class="main-text menu-style footer__menu-text menu__text">Видео</li>
+              <li class="main-text menu-style footer__menu-text white-text-animation">Видео</li>
             </a>
             <a href="contackt.html" class="footer__menu-link">
-              <li class="main-text menu-style footer__menu-text menu__text">Контакты</li>
+              <li class="main-text menu-style footer__menu-text white-text-animation">Контакты</li>
             </a>
           </ul>
         </div>
         <div class="footer__right">
           <h2 class="title-h2 footer__title">СОЦИАЛЬНЫЕ СЕТИ</h2>
-          <div class="header__bottom-social">
-            <a href="https://vk.com" target="_blank">
-              <svg class="btn-social" viewBox="0 0 50 50">
-                <use href="sprites.svg#vk"></use>
-              </svg>
-            </a>
-            <a href="https://dzen.ru" class="btn-social">
-              <svg class="btn-social" viewBox="0 0 50 50">
-                <use href="sprites.svg#dzen"></use>
-              </svg>
-            </a>
-            <a href="https://whatsapp.com" class="btn-social">
-              <svg class="btn-social" viewBox="0 0 50 50">
-                <use href="sprites.svg#whatsapp"></use>
-              </svg>
-            </a>
-          </div>
+          <ul class="social-button">
+            <li class="social-button-list">
+              <a class="social-button-link" href="https://vk.ru/club35013292" aria-label="ВКонтакте" target="_blank">
+                <svg class="btn-social icon-animation" viewBox="0 0 50 50">
+                  <use href="sprites.svg#vk"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-button-list">
+              <a class="social-button-link" href="https://dzen.ru/id/64ad271313ff8216f10c7faf" aria-label="Дзен"
+                target="_blank">
+                <svg class="btn-social icon-animation" viewBox="0 0 50 50">
+                  <use href="sprites.svg#dzen"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-button-list">
+              <a class="social-button-link"
+                href="https://max.ru/u/f9LHodD0cOLLGyQmQoLq6-svdly1-G2yXFyvW3MHEe_JWJzoySJHfmygBRc"
+                aria-label="Написать в MAX" target="_blank">
+                <svg class="btn-social icon-animation" viewBox="0 0 50 50">
+                  <use href="sprites.svg#max"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
         </div>
       </div>
     </div>

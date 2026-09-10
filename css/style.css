@@ -319,7 +319,7 @@ textarea {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height: 95%;
+    height: 94%;
     padding: 20px 0;
     box-sizing: border-box;
     padding-top: 50px;
@@ -411,7 +411,8 @@ textarea {
 
 .menu {
     position: fixed;
-    top: 0;
+    top: 5px;
+    left: 5px;
     width: 250px;
     height: 100vh;
     background: #231F1A;
@@ -1375,7 +1376,7 @@ textarea {
         align-items: center;
     }
 
-    .menu-style {
+    .footer-menu {
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -1462,7 +1463,8 @@ textarea {
     }
 
     .header__logo {
-        height: 32px;
+        
+        width: 60px;
     }
 
     .header__content {
@@ -1493,7 +1495,7 @@ textarea {
     }
 
     .header__logo {
-        height: 28px;
+        width: 50px;
     }
 
     .btn-stroke {

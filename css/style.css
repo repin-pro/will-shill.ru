@@ -319,7 +319,7 @@ textarea {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height: 93%;
+    height: 95%;
     padding: 20px 0;
     box-sizing: border-box;
     padding-top: 50px;
@@ -1420,9 +1420,7 @@ textarea {
 
 
 @media (max-width: 768px) {
-    .title-image {
-        width: 200px;
-    }
+
 
     .container {
 
@@ -1463,7 +1461,7 @@ textarea {
     }
 
     .header__logo {
-        
+
         width: 60px;
     }
 
@@ -1476,10 +1474,19 @@ textarea {
         height: 40px;
     }
 
+    .header__top-container {
+        margin-top: 30px;
+    }
+
 
 }
 
 @media (max-width: 480px) {
+
+    .title-image {
+        width: 200px;
+    }
+
     .header__top-container {
         padding: 0 8px;
     }

@@ -394,6 +394,12 @@ textarea {
 
 /* header */
 
+.title-image {
+    width: 500px;
+    margin: 0 auto;
+
+}
+
 .header {
     position: relative;
     width: 100%;
@@ -1341,6 +1347,25 @@ textarea {
         align-items: center;
         gap: 70px;
     }
+
+    .title-image {
+        width: 400px;
+    }
+
+    .btn-stroke {
+        padding: 12px 59px;
+        font-size: 14px;
+    }
+
+    .social-button-link {
+        width: 45px;
+        height: 45px;
+    }
+
+    .arrow-down {
+        width: 50px;
+        height: 47px;
+    }
 }
 
 @media (max-width: 871px) {
@@ -1361,12 +1386,43 @@ textarea {
         flex-direction: column;
         align-items: center;
     }
+
+    .title-image {
+        width: 300px;
+    }
+
+    .social-button-link {
+        width: 45px;
+        height: 45px;
+    }
+
+
+    .btn-stroke {
+        padding: 10px 57px;
+        font-size: 14px;
+    }
+
+    .social-button-link {
+        width: 42px;
+        height: 42px;
+    }
+
+    .arrow-down {
+        width: 47px;
+        height: 45px;
+    }
+
+
 }
 
 
 
 
 @media (max-width: 768px) {
+    .title-image {
+        width: 200px;
+    }
+
     .container {
 
         padding: 0 15px;
@@ -1412,6 +1468,13 @@ textarea {
     .header__content {
         padding: 0 10px;
     }
+
+    .social-button-link {
+        width: 40px;
+        height: 40px;
+    }
+
+
 }
 
 @media (max-width: 480px) {
@@ -1419,7 +1482,7 @@ textarea {
         padding: 0 8px;
     }
 
-    
+
     .header__burger {
         width: 33px;
         height: 27px;
@@ -1434,7 +1497,7 @@ textarea {
     }
 
     .btn-stroke {
-        padding: 9px 40px;
+        padding: 9px 42px;
         font-size: 14px;
     }
 
@@ -1445,8 +1508,8 @@ textarea {
     }
 
     .arrow-down {
-        width: 50px;
-        height: 47px;
+        width: 44px;
+        height: 42px;
     }
 
     .social-button {

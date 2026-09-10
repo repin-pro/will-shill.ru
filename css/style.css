@@ -532,6 +532,10 @@ textarea {
     margin-bottom: 100px;
 }
 
+.about-title {
+    margin-bottom: 50px;
+}
+
 .about__photo {
     object-fit: cover;
 }

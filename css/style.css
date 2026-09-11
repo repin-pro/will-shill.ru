@@ -297,9 +297,11 @@ textarea {
 
 /* Обёртка для абсолютного позиционирования */
 .header__slider-wrapper {
-    position: relative;
-    width: 100%;
-    height: 100%;
+   position: relative;
+  width: 100%;
+  /* Важно: задаём высоту явно, иначе на мобилке слайдер схлопнется */
+  height: 100vh; /* или фиксированная высота, например 500px, если не на весь экран */
+  min-height: 400px; /* страховка для мобильных */
 }
 
 .header__burger {
@@ -335,31 +337,38 @@ textarea {
 
 
 .slider__background {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+     position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden; /* чтобы не вылезали слайды */
 }
 
 .slider__background::before {
     content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.7);
-    z-index: 1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 1;
+  pointer-events: none; /* чтобы клики проходили сквозь затемнение */
 }
 
 .slide {
-    flex: 0 0 100%;
-    /* каждый слайд = 100% ширины контейнера */
-    height: 100%;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+     position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0; /* все слайды по умолчанию невидимы */
+  transition: opacity 0.6s ease-in-out; /* плавное переключение */
+  z-index: 0;
 }
 
 .slide img {

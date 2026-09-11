@@ -297,11 +297,9 @@ textarea {
 
 /* Обёртка для абсолютного позиционирования */
 .header__slider-wrapper {
-    position: relative;
-    width: 100%;
-    height: 100vh;
-    /* Полная высота экрана */
-    overflow: hidden;
+  position: relative;
+  width: 100%;
+  height: 100%;
 }
 
 .header__burger {
@@ -356,17 +354,17 @@ textarea {
 }
 
 .slide {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-size: cover;
-    background-position: center;
-    opacity: 0;
-    transition: opacity 1s ease;
-    pointer-events: none;
-    /* Чтобы не мешали кликам */
+  flex: 0 0 100%;          /* каждый слайд = 100% ширины контейнера */
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;      /* аналог background-size: cover для img */
 }
 
 .slide.active {
@@ -403,11 +401,12 @@ textarea {
 
 .header {
     position: relative;
-    width: 100%;
-    /* Чтобы слайды не вылазили */
-    z-index: 2;
-    /* Выше слайдера */
-    margin-bottom: 100px;
+  width: 100%;
+  z-index: 2;
+  margin-bottom: 100px;
+  height: 100vh;           /* высота на весь экран */
+  min-height: 500px;      /* минимальная высота, чтобы не схлопывалось на очень маленьких экранах */
+  overflow: hidden;       /* чтобы слайды не вылезали за границы */
 }
 
 .menu {
@@ -495,13 +494,13 @@ textarea {
 }
 
 .slider {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    overflow: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;           /* теперь это 100% от .header, который = 100vh */
+  display: flex;
+  overflow: hidden;
 }
 
 .header__top {

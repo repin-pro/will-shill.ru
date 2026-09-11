@@ -1385,7 +1385,7 @@ textarea {
     }
 
     .title-image {
-        width: 400px;
+        display: none;
     }
 
     .btn-stroke {
@@ -1524,11 +1524,6 @@ textarea {
     .header__burger {
         width: 33px;
         height: 27px;
-    }
-
-      .btn-stroke {
-        padding: 9px 42px;
-        font-size: 14px;
     }
 
      .btn-social {

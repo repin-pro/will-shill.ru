@@ -323,6 +323,7 @@ textarea {
     padding: 20px 0;
     box-sizing: border-box;
     padding-top: 50px;
+    gap: 30px;
 }
 
 .header__slider {
@@ -1020,6 +1021,7 @@ textarea {
 
 .about-page__left {
     width: 849px;
+    padding-right: 30px;
 }
 
 .about-page__img {
@@ -1302,6 +1304,25 @@ textarea {
 @media (max-width: 1200px) {
     .gallery-column {
         width: 31%;
+    }
+    .about-page__wrap {
+        display: flex;
+        flex-direction: column-reverse;
+        gap: 30px;
+        align-items: center;
+    }
+
+    .title-image {
+        width: 450px;
+    }
+
+    .about-page__title {
+        align-self: center;
+    }
+
+    .about-page__left {
+        padding: 0 30px;
+        width: 100%;
     }
 }
 

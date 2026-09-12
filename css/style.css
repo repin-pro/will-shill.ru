@@ -1517,6 +1517,11 @@ textarea {
 
 
 @media (max-width: 768px) {
+
+.coll-back-btn {
+    padding: 10px 40px;
+}
+
     .gallery-title {
         align-self: center;
     }

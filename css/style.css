@@ -1105,8 +1105,21 @@ textarea {
     gap: 30px;
 }
 
-.gallery__tab-button {
+.gallery__tab-button:active {
+    /* эффект нажатия */
+    transform: translateY(1px);
    
+}
+
+.gallery__tab-button.active {
+    background-color: #E9B870;
+    color: #000000;
+
+}
+
+
+.gallery__tab-button {
+
     /* кнопка занимает всю ширину родителя */
     box-sizing: border-box;
     /* критично: padding и border не увеличат ширину */
@@ -1118,7 +1131,7 @@ textarea {
     /* разрешает сжиматься, если очень узкий экран */
     /* твои стили оформления (оставь как есть) */
     border-radius: 30px;
-    border: 2px solid #d4af37;
+    border: 2px solid #B7986A;
     /* золотой цвет рамки */
     background: transparent;
     color: #fff;
@@ -1516,9 +1529,9 @@ textarea {
 
 @media (max-width: 768px) {
 
-.coll-back-btn {
-    padding: 10px 40px;
-}
+    .coll-back-btn {
+        padding: 10px 40px;
+    }
 
     .gallery-title {
         align-self: center;

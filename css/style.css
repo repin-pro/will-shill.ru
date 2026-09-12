@@ -297,11 +297,13 @@ textarea {
 
 /* Обёртка для абсолютного позиционирования */
 .header__slider-wrapper {
-   position: relative;
-  width: 100%;
-  /* Важно: задаём высоту явно, иначе на мобилке слайдер схлопнется */
-  height: 100vh; /* или фиксированная высота, например 500px, если не на весь экран */
-  min-height: 400px; /* страховка для мобильных */
+    position: relative;
+    width: 100%;
+    /* Важно: задаём высоту явно, иначе на мобилке слайдер схлопнется */
+    height: 100vh;
+    /* или фиксированная высота, например 500px, если не на весь экран */
+    min-height: 400px;
+    /* страховка для мобильных */
 }
 
 .header__burger {
@@ -337,38 +339,42 @@ textarea {
 
 
 .slider__background {
-     position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  overflow: hidden; /* чтобы не вылезали слайды */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    /* чтобы не вылезали слайды */
 }
 
 .slider__background::before {
     content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.7);
-  z-index: 1;
-  pointer-events: none; /* чтобы клики проходили сквозь затемнение */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 1;
+    pointer-events: none;
+    /* чтобы клики проходили сквозь затемнение */
 }
 
 .slide {
-     position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  opacity: 0; /* все слайды по умолчанию невидимы */
-  transition: opacity 0.6s ease-in-out; /* плавное переключение */
-  z-index: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0;
+    /* все слайды по умолчанию невидимы */
+    transition: opacity 0.6s ease-in-out;
+    /* плавное переключение */
+    z-index: 0;
 }
 
 .slide img {
@@ -1096,11 +1102,28 @@ textarea {
     margin-bottom: 50px;
     display: flex;
     justify-content: space-between;
+    gap: 30px;
 }
 
 .gallery__tab-button {
-    width: 300px;
-    height: 52px;
+    width: 100%;
+    /* кнопка занимает всю ширину родителя */
+    box-sizing: border-box;
+    /* критично: padding и border не увеличат ширину */
+    padding: 14px 0;
+    /* вертикальные отступы для высоты кнопки */
+    text-align: center;
+    /* текст по центру */
+    min-width: 0;
+    /* разрешает сжиматься, если очень узкий экран */
+    /* твои стили оформления (оставь как есть) */
+    border-radius: 30px;
+    border: 2px solid #d4af37;
+    /* золотой цвет рамки */
+    background: transparent;
+    color: #fff;
+    font-family: serif;
+    /* старинный шрифт, если есть */
 }
 
 .gallery__tab-content {
@@ -1113,16 +1136,18 @@ textarea {
 
 
 .gallery-columns {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    /* 4 равные колонки */
     gap: 20px;
-    /* расстояние между колонками */
-    justify-content: center;
-    padding: 20px 0;
+    padding: 20px 20px;
 }
 
-.gallery-column {
-    width: 23%;
+.gallery-column-1,
+.gallery-column-2,
+.gallery-column-3,
+.gallery-column-4 {
+
     /* 4 колонки с небольшим зазором */
     display: flex;
     flex-direction: column;
@@ -1172,13 +1197,13 @@ textarea {
     /* Отступы сверху и снизу */
     padding: 20px;
 
-   
 
-   
+
+
     background: #231F1A;
     border: 1px solid var(--gold, #B7986A);
     box-shadow: 0px 0px 50px 0px rgba(183, 152, 106, 0.20);
-   
+
 
 }
 
@@ -1186,7 +1211,7 @@ textarea {
     position: absolute;
     top: 10px;
     right: 10px;
-    
+
     border: none;
     padding: 10px;
     cursor: pointer;
@@ -1331,9 +1356,7 @@ textarea {
 
 /* Адаптивность */
 @media (max-width: 1200px) {
-    .gallery-column {
-        width: 31%;
-    }
+
 
     .about-page__wrap {
         display: flex;
@@ -1354,15 +1377,25 @@ textarea {
         padding: 0 30px;
         width: 100%;
     }
+
+    .gallery__tab-button {
+        padding-left: 110px;
+        padding-right: 110px;
+    }
+
+    .gallery-columns {
+        grid-template-columns: repeat(3, 1fr);
+    }
 }
 
 @media (max-width: 992px) {
-    .header__overlay {
-        padding-top: 20px;
+
+    .gallery-columns {
+        grid-template-columns: repeat(2, 1fr);
     }
 
-    .gallery-column {
-        width: 48%;
+    .header__overlay {
+        padding-top: 20px;
     }
 
     .about__content {
@@ -1412,11 +1445,6 @@ textarea {
         display: none;
     }
 
-    .btn-stroke {
-        padding: 12px 59px;
-        font-size: 14px;
-    }
-
     .social-button-link {
         width: 45px;
         height: 45px;
@@ -1429,6 +1457,11 @@ textarea {
 
     .title-image {
         width: 300px;
+    }
+
+    .gallery__tab-button {
+        padding-left: 80px;
+        padding-right: 80px;
     }
 }
 
@@ -1459,9 +1492,11 @@ textarea {
     }
 
 
-    .btn-stroke {
-        padding: 10px 57px;
-        font-size: 14px;
+    .gallery__tab-button {
+        padding-left: 70px;
+        padding-right: 70px;
+
+
     }
 
     .social-button-link {
@@ -1475,12 +1510,16 @@ textarea {
     }
 
 
+
+
 }
 
 
 
 @media (max-width: 768px) {
-
+    .gallery-title {
+        align-self: center;
+    }
 
     .container {
 
@@ -1495,10 +1534,6 @@ textarea {
     .video__card {
         width: 100%;
         margin-bottom: 20px;
-    }
-
-    .gallery-column {
-        width: 100%;
     }
 
     .image-overlay__image {
@@ -1561,11 +1596,31 @@ textarea {
         width: 44px;
         height: 42px;
     }
+
+    .gallery-columns {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .gallery__tabs {
+        margin-bottom: 50px;
+        display: flex;
+        flex-direction: column;
+        /* кнопки друг под другом */
+        gap: 30px;
+        /* расстояние между кнопками */
+        max-width: 400px;
+        /* ограничиваем ширину группы */
+        margin-left: auto;
+        /* центрируем группу */
+        margin-right: auto;
+    }
 }
 
 @media (max-width: 480px) {
 
-
+    .gallery-columns {
+        grid-template-columns: 1fr;
+    }
 
     .header__top-container {
         padding: 0 8px;

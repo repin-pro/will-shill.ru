@@ -76,7 +76,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
 /* увеличение картинки */
 document.addEventListener('DOMContentLoaded', () => {
-    const galleryImages = document.querySelectorAll('.gallery-column img');
+    const galleryImages = document.querySelectorAll('.gallery-image');
     const imageOverlay = document.querySelector('.image-overlay');
     const enlargedImage = document.querySelector('.image-overlay__image');
     const closeButton = document.querySelector('.image-overlay__close');

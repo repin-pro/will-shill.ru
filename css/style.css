@@ -1106,11 +1106,11 @@ textarea {
 }
 
 .gallery__tab-button {
-    width: 100%;
+   
     /* кнопка занимает всю ширину родителя */
     box-sizing: border-box;
     /* критично: padding и border не увеличат ширину */
-    padding: 14px 0;
+    padding: 14px 130px;
     /* вертикальные отступы для высоты кнопки */
     text-align: center;
     /* текст по центру */
@@ -1508,8 +1508,6 @@ textarea {
         width: 47px;
         height: 45px;
     }
-
-
 
 
 }

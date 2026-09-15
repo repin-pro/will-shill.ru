@@ -11,14 +11,14 @@
 </head>
 
 <body>
-   <div class="menu">
+  <nav class="menu" aria-label="Основное меню сайта">
     <div class="menu__cont">
       <div class="menu__top-wrap">
         <a class="header__logo-link" href="index.html">
           <img class="header__logo" src="img/logo.svg" alt="Логотип компании">
         </a>
-        <button class="menu__closed" type="button">
-          <svg class="icon-closed" viewBox="0 0 16 16">
+        <button class="menu__closed" type="button" aria-label="Закрыть меню">
+          <svg class="icon-closed" viewBox="0 0 16 16" aria-hidden="true" focusable="false">
             <use href="sprites.svg#icon-closed"></use>
           </svg>
           <span class="visually-hidden">Закрыть меню</span>
@@ -44,34 +44,42 @@
       </li>
     </ul>
 
-    <ul class="social-button">
-      <li class="social-button-list">
-        <a class="social-button-link" href="https://vk.ru/club35013292" aria-label="ВКонтакте" target="_blank">
-          <svg class="btn-social icon-animation" viewBox="0 0 50 50">
-            <use href="sprites.svg#vk"></use>
-          </svg>
-        </a>
-      </li>
-      <li class="social-button-list">
-        <a class="social-button-link" href="https://dzen.ru/id/64ad271313ff8216f10c7faf" aria-label="Дзен"
-          target="_blank">
-          <svg class="btn-social icon-animation" viewBox="0 0 50 50">
-            <use href="sprites.svg#dzen"></use>
-          </svg>
-        </a>
-      </li>
-      <li class="social-button-list">
-        <a class="social-button-link"
-          href="https://max.ru/u/f9LHodD0cOLLGyQmQoLq6-svdly1-G2yXFyvW3MHEe_JWJzoySJHfmygBRc"
-          aria-label="Написать в MAX" target="_blank">
-          <svg class="btn-social icon-animation" viewBox="0 0 50 50">
-            <use href="sprites.svg#max"></use>
-          </svg>
-        </a>
-      </li>
-    </ul>
-
-  </div>
+   <ul class="social-button">
+    <li class="social-button-list">
+      <a class="social-button-link"
+         href="https://vk.ru/club35013292"
+         aria-label="ВКонтакте"
+         target="_blank"
+         rel="noopener noreferrer">
+        <svg class="btn-social icon-animation" viewBox="0 0 50 50" aria-hidden="true" focusable="false">
+          <use href="sprites.svg#vk"></use>
+        </svg>
+      </a>
+    </li>
+    <li class="social-button-list">
+      <a class="social-button-link"
+         href="https://dzen.ru/id/64ad271313ff8216f10c7faf"
+         aria-label="Дзен"
+         target="_blank"
+         rel="noopener noreferrer">
+        <svg class="btn-social icon-animation" viewBox="0 0 50 50" aria-hidden="true" focusable="false">
+          <use href="sprites.svg#dzen"></use>
+        </svg>
+      </a>
+    </li>
+    <li class="social-button-list">
+      <a class="social-button-link"
+         href="https://max.ru/u/f9LHodD0cOLLGyQmQoLq6-svdly1-G2yXFyvW3MHEe_JWJzoySJHfmygBRc"
+         aria-label="Написать в MAX"
+         target="_blank"
+         rel="noopener noreferrer">
+        <svg class="btn-social icon-animation" viewBox="0 0 50 50" aria-hidden="true" focusable="false">
+          <use href="sprites.svg#max"></use>
+        </svg>
+      </a>
+    </li>
+  </ul>
+  </nav>
 
   <header class="header">
     <div class="header__slider-wrapper">
@@ -106,7 +114,7 @@
 
         <div class="header__content container">
           <div class="header__content-social">
-            <a href="contackt.html" class="coll-back-btn btn-stroke" target="_blank">Обратный звонок</a>
+            <a href="contact.html" class="coll-back-btn btn-stroke" target="_blank">Обратный звонок</a>
             <ul class="social-button">
               <li class="social-button-list">
                 <a class="social-button-link" href="https://vk.ru/club35013292" aria-label="ВКонтакте" target="_blank">
@@ -155,7 +163,7 @@
       </div>
     </div>
   </section>
-   <footer class="footer">
+    <footer class="footer">
     <div class="container">
       <div class="footer__items">
         <div class="footer__left">

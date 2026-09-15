@@ -7,8 +7,8 @@ const nextBtn = document.getElementById('next-btn');
 const progressBar = document.getElementById('progress-bar');
 const currentTime = document.getElementById('current-time');
 const totalTime = document.getElementById('total-time');
-const trackListItems = document.querySelectorAll('.track-list li');
-const currentTrackDisplay = document.getElementById('current-track');
+const trackListItems = document.querySelectorAll('.album-list');
+const currentTrackDisplay = document.querySelector('.current-track');
 
 let currentTrackIndex = 0;
 

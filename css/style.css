@@ -82,6 +82,15 @@ textarea {
 
 /* global */
 
+.visually-hidden:not(:focus):not(:active) {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  clip-path: inset(50%);
+  overflow: hidden;
+  white-space: nowrap;
+}
+
 .header__container {
     padding: 0 15px;
     margin: 0 auto;
@@ -512,6 +521,7 @@ textarea {
     cursor: pointer;
     transition: 0.5s;
     background-color: inherit;
+    border: none;
 }
 
 .slider {
@@ -1262,7 +1272,7 @@ textarea {
 /* аудио плеер */
 .btn-audio {
     background: #222;
-    color: #fff;
+    color: #ffffff;
 }
 
 
@@ -1272,7 +1282,7 @@ textarea {
     gap: 10px;
     padding: 20px;
     background: #222;
-    color: #fff;
+    color: #ffffff;
     max-width: 700px;
     margin-bottom: 100px;
 }
@@ -1305,28 +1315,31 @@ textarea {
     font-size: 0.9em;
 }
 
-.track-list ul {
+.album-lists {
     list-style: none;
     padding: 0;
 }
 
-.track-list li {
+.album-list {
     padding: 8px 0;
     border-bottom: 1px solid #555;
     cursor: pointer;
+    padding-left: 10px;
 }
 
-.track-list li.active {
+.album-list.active {
     background-color: #555;
+    color: #E9B870;
 }
 
 .back-page-btn {
     align-self: center;
 }
 
-#current-track {
+.current-track {
     margin-top: 10px;
     font-size: 0.9em;
+    margin-left: 10px;
 }
 
 #progress-bar {

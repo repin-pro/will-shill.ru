@@ -17,10 +17,11 @@
         <a class="header__logo-link" href="index.html">
           <img class="header__logo" src="img/logo.svg" alt="Логотип компании">
         </a>
-        <button class="menu__closed">
+        <button class="menu__closed" type="button">
           <svg class="icon-closed" viewBox="0 0 16 16">
-          <use href="sprites.svg#icon-closed"></use>
-        </svg>
+            <use href="sprites.svg#icon-closed"></use>
+          </svg>
+          <span class="visually-hidden">Закрыть меню</span>
         </button>
       </div>
     </div>
@@ -39,7 +40,7 @@
         <a href="video.html" class="footer__menu-link">Видео</a>
       </li>
       <li class="main-text white-text-animation">
-        <a href="contackt.html" class="footer__menu-link">Контакты</a>
+        <a href="contact.html" class="footer__menu-link">Контакты</a>
       </li>
     </ul>
 
@@ -95,15 +96,17 @@
             <a class="header__logo-link" href="index.html">
               <img class="header__logo" src="img/logo.svg" alt="Логотип компании">
             </a>
-            <button class="header__burger" aria-label="Открыть меню"></button>
+            <button class="header__burger" type="button">
+              <span class="visually-hidden">Открыть меню</span>
+            </button>
           </div>
         </div>
 
-        <img class="title-image" src="img/logo-big.svg">
+        <img class="title-image" src="img/logo-big.svg" alt="Михаил Вяльшин">
 
         <div class="header__content container">
           <div class="header__content-social">
-            <a href="contackt.html" class="btn-stroke" target="_blank">Обратный звонок</a>
+            <a href="contackt.html" class="coll-back-btn btn-stroke" target="_blank">Обратный звонок</a>
             <ul class="social-button">
               <li class="social-button-list">
                 <a class="social-button-link" href="https://vk.ru/club35013292" aria-label="ВКонтакте" target="_blank">
@@ -180,33 +183,36 @@
     </div>
   </section>
 
-  <footer class="footer">
+ <footer class="footer">
     <div class="container">
       <div class="footer__items">
         <div class="footer__left">
-          <a href="/" class="footer__left-link">
+          <a href="index.html" class="footer__left-link">
+            <span class="visually-hidden">Вернуться на главную страницу</span>
             <div class="footer__left-logo"></div>
           </a>
         </div>
         <div class="footer__center">
           <h2 class="title-h2 footer__title">РАЗДЕЛЫ САЙТА</h2>
-          <ul class="footer-menu menu-style">
-            <a href="about.html" class="footer__menu-link">
-              <li class="main-text menu-style footer__menu-text white-text-animation">Обо мне</li>
-            </a>
-            <a href="gallery.html" class="footer__menu-link">
-              <li class="main-text menu-style footer__menu-text white-text-animation">Галерея</li>
-            </a>
-            <a href="songs.html" class="footer__menu-link">
-              <li class="main-text menu-style footer__menu-text white-text-animation">Мои песни</li>
-            </a>
-            <a href="video.html" class="footer__menu-link">
-              <li class="main-text menu-style footer__menu-text white-text-animation">Видео</li>
-            </a>
-            <a href="contackt.html" class="footer__menu-link">
-              <li class="main-text menu-style footer__menu-text white-text-animation">Контакты</li>
-            </a>
-          </ul>
+          <nav aria-label="Меню в подвале">
+            <ul class="footer-menu menu-style">
+              <li class="main-text menu-style footer__menu-text white-text-animation">
+                <a href="about.html" class="footer__menu-link">Обо мне</a>
+              </li>
+              <li class="main-text menu-style footer__menu-text white-text-animation">
+                <a href="gallery.html" class="footer__menu-link">Галерея</a>
+              </li>
+              <li class="main-text menu-style footer__menu-text white-text-animation">
+                <a href="songs.html" class="footer__menu-link">Мои песни</a>
+              </li>
+              <li class="main-text menu-style footer__menu-text white-text-animation">
+                <a href="video.html" class="footer__menu-link">Видео</a>
+              </li>
+              <li class="main-text menu-style footer__menu-text white-text-animation">
+                <a href="contact.html" class="footer__menu-link">Контакты</a>
+              </li>
+            </ul>
+          </nav>
         </div>
         <div class="footer__right">
           <h2 class="title-h2 footer__title">СОЦИАЛЬНЫЕ СЕТИ</h2>

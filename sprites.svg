@@ -64,14 +64,22 @@
         </symbol>
 
         <symbol id="btn-player-pause" viewBox="0 0 7 13">
-            <line x1="1" y1="4.53303e-08" x2="0.999999" y2="13" stroke="#010101" stroke-width="2"/>
-            <line x1="6" x2="6" y2="13" stroke="#010101" stroke-width="2"/>
+            <path d="M1 4.53303e-08L1 13M6 0V13" stroke="#010101" stroke-width="2"/>
+        </symbol>
+
+        <symbol id="btn-player-next-track" viewBox="0 0 23 17">
+            <path d="M22 1.7536V14.7536M10.3794 7.30321C11.2069 7.79348 11.2069 8.69364 10.3794 9.17988L1 14.7536V1.7536L10.3794 7.30321ZM20.3794 7.30321C21.2069 7.79348 21.2069 8.69364 20.3794 9.17988L11 14.7536V1.7536L20.3794 7.30321Z" stroke="black" stroke-width="2"/>
+        </symbol>
+
+        <symbol id="btn-player-back-track" viewBox="0 0 23 17">
+            <path d="M1 1.7536V14.7536M12.6206 7.30321C11.7931 7.79348 11.7931 8.69364 12.6206 9.17988L22 14.7536V1.7536L12.6206 7.30321ZM2.62061 7.30321C1.79313 7.79348 1.79313 8.69364 2.62061 9.17988L12 14.7536V1.7536L2.62061 7.30321Z" stroke="black" stroke-width="2"/>
+        </symbol>
+
+        <symbol id="icon-volume" viewBox="0 0 17 14">
+            <path d="M4.5 4H0.5V10H4.5M4.5 4V10M4.5 4H8.5V10H4.5M8 0V14M7 1V13M6 2V12M5 3V11M10 4V10M11 4V10M12 5V9M16 5V9M15 3V11M14 2V6M14 8V12M13 10V13M13 1V4M12 0V3M12 11V14M11 12V14M11 0V2M10 0V2M10 12V14" stroke="black"/>
         </symbol>
 
 
-
-
-  
 
         <!-- Добавьте другие иконки по аналогии -->
     </defs>

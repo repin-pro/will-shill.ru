@@ -1283,66 +1283,71 @@ textarea {
 /* аудио плеер */
 
 .volume-range {
-  -webkit-appearance: none;
-  appearance: none;
-  width: 90px;       /* фиксированная ширина */
-  height: 6px;       /* высота дорожки */
-  background: rgba(0, 0, 0, 0.3);
-  border-radius: 3px;
-  cursor: pointer;
-  margin: 0;
-  flex-shrink: 0;    /* запрещает сжиматься */
-  /* убираем лишние отступы, которые браузеры могут добавлять */
-  padding: 0;
-  border: none;
+    -webkit-appearance: none;
+    appearance: none;
+    width: 90px;
+    /* фиксированная ширина */
+    height: 6px;
+    /* высота дорожки */
+    background: rgba(0, 0, 0, 0.3);
+    border-radius: 3px;
+    cursor: pointer;
+    margin: 0;
+    flex-shrink: 0;
+    /* запрещает сжиматься */
+    /* убираем лишние отступы, которые браузеры могут добавлять */
+    padding: 0;
+    border: none;
 }
 
 .volume-range::-webkit-slider-thumb {
- -webkit-appearance: none;
-  appearance: none;
-  width: 14px;
-  height: 14px;
-  border-radius: 50%;
-  background: #C27925;
-  cursor: pointer;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.3);
-  margin-top: -3px; /* центрируем по вертикали относительно дорожки */
+    -webkit-appearance: none;
+    appearance: none;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background: #000000;
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    margin-top: -3px;
+    /* центрируем по вертикали относительно дорожки */
 }
 
 .volume-range::-webkit-slider-thumb:hover {
-  transform: scale(1.15);
-  background: #D35400;
+    transform: scale(1.15);
+    background: #3f3f3e;
 }
 
 /* Для Firefox (у него ползунок выглядит иначе) */
 .volume-range::-moz-range-thumb {
-  width: 14px;
-  height: 14px;
-  border: none;
-  border-radius: 50%;
-  background: #C27925;
-  cursor: pointer;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.3);
+    width: 14px;
+    height: 14px;
+    border: none;
+    border-radius: 50%;
+    background: #C27925;
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
 }
 
 .volume-range::-moz-range-thumb:hover {
-  transform: scale(1.15);
-  background: #D35400;
+    transform: scale(1.15);
+    background: #D35400;
 }
 
 
 .btn-audio {
-   color: #ffffff;
-  border: none;
-  background-color: inherit;
-  width: 15px;
-  height: 15px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 0;
-  cursor: pointer;
-  flex-shrink: 0; /* кнопки не сжимаются */
+    color: #ffffff;
+    border: none;
+    background-color: inherit;
+    width: 15px;
+    height: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    cursor: pointer;
+    flex-shrink: 0;
+    /* кнопки не сжимаются */
 }
 
 
@@ -1353,8 +1358,10 @@ textarea {
     padding: 20px;
     background: #222;
     color: #ffffff;
+    width: 100%;
     max-width: 700px;
     margin-bottom: 100px;
+    align-self: center;
 }
 
 .album-cover img {
@@ -1365,7 +1372,10 @@ textarea {
 .player-controls {
     display: flex;
     align-items: center;
+    justify-content: space-between;
+    /* или center, если хочешь всё по центру */
     gap: 15px;
+
     background-color: #B7986A;
     padding: 15px;
     border-radius: 30px;
@@ -1381,9 +1391,7 @@ textarea {
 }
 
 .progress-bar-container {
-   flex: 1;
-  margin: 0 15px;
-  min-width: 0; /* важно для корректной работы flex внутри */
+    display: contents;
 }
 
 .time-display {
@@ -1420,29 +1428,43 @@ textarea {
 #progress-bar {
      -webkit-appearance: none;
   appearance: none;
-  width: 100%;
-  height: 8px; /* чуть тоньше, если хочешь */
+  width: 100%;               /* пусть занимает всё свободное место */
+  height: 8px;              /* фиксированная высота */
   border: none;
   background: rgba(0, 0, 0, 0.3);
+  margin: 0;                /* убираем любые внешние отступы */
+  flex: 1;                  /* важно: пусть растягивается и занимает место */
+  min-width: 0;             /* предотвращает «раздувание» родителя */
+  border-radius: 4px;
+  
 }
 
 #progress-bar::-webkit-progress-bar {
    background: rgba(0, 0, 0, 0.3);
+  border-radius: 4px;
 
 }
 
 #progress-bar::-webkit-progress-value {
-    background-color: #000000;
+   background: #000000;
+  border-radius: 4px;
 }
 
 #progress-bar::-moz-progress-bar {
-    background-color: #000000;
-    /* Для Firefox */
+     background: #000000;
+  border-radius: 4px;
+}
+
+.volume-range-wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 3px;
 }
 
 .icon-audio {
-    width: 10px;
-    height: 13px;
+    width: 15px;
+    height: 15px;
 
 }
 
@@ -1456,27 +1478,34 @@ textarea {
 
 /* Когда у кнопки есть класс .is-playing — показываем Pause, скрываем Play */
 .btn-audio.is-playing .play-svg {
-  display: none;
+    display: none;
 }
+
 .btn-audio.is-playing .pause-svg {
-  display: block;
+    display: block;
 }
 
 /* album-page */
+
+
 .album-page__info-block {
     display: flex;
     margin-bottom: 100px;
+    gap: 140px;
 }
 
 .album-page__img-album {
-    margin-right: 140px;
+    object-fit: contain;
+    align-self: self-start;
 }
 
 
 
 /* Адаптивность */
 @media (max-width: 1200px) {
-
+.album-page__info-block {
+    gap: 50px;
+}
 
     .about-page__wrap {
         display: flex;

@@ -7,7 +7,7 @@
   <title>Document</title>
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
-  <script defer src="js/scrypt.js"></script>
+  <script defer src="js/script.js"></script>
 </head>
 
 <body>
@@ -163,69 +163,82 @@
       </div>
     </div>
   </section>
-    <footer class="footer">
-    <div class="container">
-      <div class="footer__items">
-        <div class="footer__left">
-          <a href="index.html" class="footer__left-link">
-            <span class="visually-hidden">Вернуться на главную страницу</span>
-            <div class="footer__left-logo"></div>
-          </a>
-        </div>
-        <div class="footer__center">
-          <h2 class="title-h2 footer__title">РАЗДЕЛЫ САЙТА</h2>
-          <nav aria-label="Меню в подвале">
-            <ul class="footer-menu menu-style">
-              <li class="main-text menu-style footer__menu-text white-text-animation">
-                <a href="about.html" class="footer__menu-link">Обо мне</a>
-              </li>
-              <li class="main-text menu-style footer__menu-text white-text-animation">
-                <a href="gallery.html" class="footer__menu-link">Галерея</a>
-              </li>
-              <li class="main-text menu-style footer__menu-text white-text-animation">
-                <a href="songs.html" class="footer__menu-link">Мои песни</a>
-              </li>
-              <li class="main-text menu-style footer__menu-text white-text-animation">
-                <a href="video.html" class="footer__menu-link">Видео</a>
-              </li>
-              <li class="main-text menu-style footer__menu-text white-text-animation">
-                <a href="contact.html" class="footer__menu-link">Контакты</a>
-              </li>
-            </ul>
-          </nav>
-        </div>
-        <div class="footer__right">
-          <h2 class="title-h2 footer__title">СОЦИАЛЬНЫЕ СЕТИ</h2>
-          <ul class="social-button">
-            <li class="social-button-list">
-              <a class="social-button-link" href="https://vk.ru/club35013292" aria-label="ВКонтакте" target="_blank">
-                <svg class="btn-social icon-animation" viewBox="0 0 50 50">
-                  <use href="sprites.svg#vk"></use>
-                </svg>
-              </a>
+<footer class="footer">
+  <div class="container">
+    <div class="footer__items">
+      <div class="footer__left">
+        <a href="index.html" class="footer__left-link">
+          <span class="visually-hidden">Вернуться на главную страницу</span>
+          <div class="footer__left-logo"></div>
+        </a>
+      </div>
+
+      <div class="footer__center">
+        <!-- Просто div, без aria-level -->
+        <div class="footer__section-title">РАЗДЕЛЫ САЙТА</div>
+        <nav aria-label="Меню в подвале">
+          <ul class="footer-menu menu-style">
+            <li class="main-text menu-style footer__menu-text white-text-animation">
+              <a href="about.html" class="footer__menu-link">Обо мне</a>
             </li>
-            <li class="social-button-list">
-              <a class="social-button-link" href="https://dzen.ru/id/64ad271313ff8216f10c7faf" aria-label="Дзен"
-                target="_blank">
-                <svg class="btn-social icon-animation" viewBox="0 0 50 50">
-                  <use href="sprites.svg#dzen"></use>
-                </svg>
-              </a>
+            <li class="main-text menu-style footer__menu-text white-text-animation">
+              <a href="gallery.html" class="footer__menu-link">Галерея</a>
             </li>
-            <li class="social-button-list">
-              <a class="social-button-link"
-                href="https://max.ru/u/f9LHodD0cOLLGyQmQoLq6-svdly1-G2yXFyvW3MHEe_JWJzoySJHfmygBRc"
-                aria-label="Написать в MAX" target="_blank">
-                <svg class="btn-social icon-animation" viewBox="0 0 50 50">
-                  <use href="sprites.svg#max"></use>
-                </svg>
-              </a>
+            <li class="main-text menu-style footer__menu-text white-text-animation">
+              <a href="songs.html" class="footer__menu-link">Мои песни</a>
+            </li>
+            <li class="main-text menu-style footer__menu-text white-text-animation">
+              <a href="video.html" class="footer__menu-link">Видео</a>
+            </li>
+            <li class="main-text menu-style footer__menu-text white-text-animation">
+              <a href="contact.html" class="footer__menu-link">Контакты</a>
             </li>
           </ul>
-        </div>
+        </nav>
+      </div>
+
+      <div class="footer__right">
+        <!-- Просто div, без aria-level -->
+        <div class="footer__section-title">СОЦИАЛЬНЫЕ СЕТИ</div>
+        <ul class="social-button">
+          <li class="social-button-list">
+            <a class="social-button-link"
+               href="https://vk.ru/club35013292"
+               aria-label="ВКонтакте"
+               target="_blank"
+               rel="noopener noreferrer">
+              <svg class="btn-social icon-animation" viewBox="0 0 50 50" aria-hidden="true" focusable="false">
+                <use href="sprites.svg#vk"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social-button-list">
+            <a class="social-button-link"
+               href="https://dzen.ru/id/64ad271313ff8216f10c7faf"
+               aria-label="Дзен"
+               target="_blank"
+               rel="noopener noreferrer">
+              <svg class="btn-social icon-animation" viewBox="0 0 50 50" aria-hidden="true" focusable="false">
+                <use href="sprites.svg#dzen"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social-button-list">
+            <a class="social-button-link"
+               href="https://max.ru/u/f9LHodD0cOLLGyQmQoLq6-svdly1-G2yXFyvW3MHEe_JWJzoySJHfmygBRc"
+               aria-label="Написать в MAX"
+               target="_blank"
+               rel="noopener noreferrer">
+              <svg class="btn-social icon-animation" viewBox="0 0 50 50" aria-hidden="true" focusable="false">
+                <use href="sprites.svg#max"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
       </div>
     </div>
-  </footer>
+  </div>
+</footer>
 </body>
 
 </html>

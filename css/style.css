@@ -127,7 +127,7 @@ textarea {
     transition: 0.8s;
 }
 
-.title-h2 {
+.title-h2, .title-h1 {
     color: #FFF;
 
     /* H2 */
@@ -1033,7 +1033,17 @@ textarea {
     cursor: pointer;
 }
 
-.footer__title {
+.footer__section-title {
+    color: #FFFFFF;
+
+    /* H2 */
+    font-family: "IBM Plex Sans";
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 40px;
+    /* 125% */
+    text-transform: uppercase;
     margin-bottom: 15px;
 }
 

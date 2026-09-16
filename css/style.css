@@ -83,12 +83,12 @@ textarea {
 /* global */
 
 .visually-hidden:not(:focus):not(:active) {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  clip-path: inset(50%);
-  overflow: hidden;
-  white-space: nowrap;
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    clip-path: inset(50%);
+    overflow: hidden;
+    white-space: nowrap;
 }
 
 .header__container {
@@ -127,7 +127,8 @@ textarea {
     transition: 0.8s;
 }
 
-.title-h2, .title-h1 {
+.title-h2,
+.title-h1 {
     color: #FFF;
 
     /* H2 */
@@ -1128,7 +1129,7 @@ textarea {
 .gallery__tab-button:active {
     /* эффект нажатия */
     transform: translateY(1px);
-   
+
 }
 
 .gallery__tab-button.active {
@@ -1280,9 +1281,68 @@ textarea {
 
 
 /* аудио плеер */
+
+.volume-range {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 90px;       /* фиксированная ширина */
+  height: 6px;       /* высота дорожки */
+  background: rgba(0, 0, 0, 0.3);
+  border-radius: 3px;
+  cursor: pointer;
+  margin: 0;
+  flex-shrink: 0;    /* запрещает сжиматься */
+  /* убираем лишние отступы, которые браузеры могут добавлять */
+  padding: 0;
+  border: none;
+}
+
+.volume-range::-webkit-slider-thumb {
+ -webkit-appearance: none;
+  appearance: none;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: #C27925;
+  cursor: pointer;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.3);
+  margin-top: -3px; /* центрируем по вертикали относительно дорожки */
+}
+
+.volume-range::-webkit-slider-thumb:hover {
+  transform: scale(1.15);
+  background: #D35400;
+}
+
+/* Для Firefox (у него ползунок выглядит иначе) */
+.volume-range::-moz-range-thumb {
+  width: 14px;
+  height: 14px;
+  border: none;
+  border-radius: 50%;
+  background: #C27925;
+  cursor: pointer;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.3);
+}
+
+.volume-range::-moz-range-thumb:hover {
+  transform: scale(1.15);
+  background: #D35400;
+}
+
+
 .btn-audio {
-    background: #222;
-    color: #ffffff;
+   color: #ffffff;
+  border: none;
+  background-color: inherit;
+  width: 15px;
+  height: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  cursor: pointer;
+  flex-shrink: 0; /* кнопки не сжимаются */
 }
 
 
@@ -1306,7 +1366,7 @@ textarea {
     display: flex;
     align-items: center;
     gap: 15px;
-    background-color: #E9B870;
+    background-color: #B7986A;
     padding: 15px;
     border-radius: 30px;
     color: #000;
@@ -1321,8 +1381,9 @@ textarea {
 }
 
 .progress-bar-container {
-    flex: 1;
-    margin: 0 15px;
+   flex: 1;
+  margin: 0 15px;
+  min-width: 0; /* важно для корректной работы flex внутри */
 }
 
 .time-display {
@@ -1357,20 +1418,17 @@ textarea {
 }
 
 #progress-bar {
-    -webkit-appearance: none;
-    /* Убираем стили по умолчанию в WebKit-браузерах */
-    appearance: none;
-    width: 100%;
-    height: 10px;
-    /* Настройте высоту по своему вкусу */
-    border: none;
-    background: rgba(0, 0, 0, 0.20);
-    /* Цвет фона (незаполненная часть) */
+     -webkit-appearance: none;
+  appearance: none;
+  width: 100%;
+  height: 8px; /* чуть тоньше, если хочешь */
+  border: none;
+  background: rgba(0, 0, 0, 0.3);
 }
 
 #progress-bar::-webkit-progress-bar {
-    background: rgba(0, 0, 0, 0.20);
-    
+   background: rgba(0, 0, 0, 0.3);
+
 }
 
 #progress-bar::-webkit-progress-value {
@@ -1380,6 +1438,28 @@ textarea {
 #progress-bar::-moz-progress-bar {
     background-color: #000000;
     /* Для Firefox */
+}
+
+.icon-audio {
+    width: 10px;
+    height: 13px;
+
+}
+
+.pause-svg {
+    display: none;
+}
+
+.play-svg {
+    display: block;
+}
+
+/* Когда у кнопки есть класс .is-playing — показываем Pause, скрываем Play */
+.btn-audio.is-playing .play-svg {
+  display: none;
+}
+.btn-audio.is-playing .pause-svg {
+  display: block;
 }
 
 /* album-page */

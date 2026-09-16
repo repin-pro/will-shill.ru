@@ -63,6 +63,12 @@
             <path fill-rule="evenodd" clip-rule="evenodd" d="M9.37939 5.54961C10.2069 6.03987 10.2069 6.94003 9.37939 7.42628L0 13V0L9.37939 5.54961Z" fill="#010101"/>
         </symbol>
 
+        <symbol id="btn-player-pause" viewBox="0 0 7 13">
+            <line x1="1" y1="4.53303e-08" x2="0.999999" y2="13" stroke="#010101" stroke-width="2"/>
+            <line x1="6" x2="6" y2="13" stroke="#010101" stroke-width="2"/>
+        </symbol>
+
+
 
 
   

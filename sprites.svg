@@ -59,7 +59,13 @@
             <line x1="14.1013" y1="13.9232" x2="1.95264" y2="2.07372" stroke="#BFBFBF" stroke-width="3"/>
         </symbol>
 
+        <symbol id="btn-player-play" viewBox="0 0 10 13">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M9.37939 5.54961C10.2069 6.03987 10.2069 6.94003 9.37939 7.42628L0 13V0L9.37939 5.54961Z" fill="#010101"/>
+        </symbol>
 
+
+
+  
 
         <!-- Добавьте другие иконки по аналогии -->
     </defs>

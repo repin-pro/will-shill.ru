@@ -1306,6 +1306,10 @@ textarea {
     display: flex;
     align-items: center;
     gap: 15px;
+    background-color: #E9B870;
+    padding: 15px;
+    border-radius: 30px;
+    color: #000;
 }
 
 .control-btn {
@@ -1360,21 +1364,21 @@ textarea {
     height: 10px;
     /* Настройте высоту по своему вкусу */
     border: none;
-    background-color: #f0f0f0;
+    background: rgba(0, 0, 0, 0.20);
     /* Цвет фона (незаполненная часть) */
 }
 
 #progress-bar::-webkit-progress-bar {
-    background-color: #f0f0f0;
+    background: rgba(0, 0, 0, 0.20);
+    
 }
 
 #progress-bar::-webkit-progress-value {
-    background-color: #B7986A;
-    /* Жёлтый цвет заполненной части */
+    background-color: #000000;
 }
 
 #progress-bar::-moz-progress-bar {
-    background-color: #B7986A;
+    background-color: #000000;
     /* Для Firefox */
 }
 

@@ -1372,7 +1372,7 @@ textarea {
 .audio-player {
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 15px;
     padding: 20px;
     background: #222;
     color: #ffffff;

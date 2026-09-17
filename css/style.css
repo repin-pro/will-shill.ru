@@ -1519,6 +1519,8 @@ textarea {
 
 /* Адаптивность */
 @media (max-width: 1200px) {
+    
+
     .album-page__info-block {
         gap: 50px;
         margin-bottom: 80px;
@@ -1699,7 +1701,7 @@ textarea {
 
 @media (max-width: 768px) {
 
-     .audio-player {
+    .audio-player {
         margin-bottom: 50px;
     }
 
@@ -1812,7 +1814,7 @@ textarea {
 
 @media (max-width: 480px) {
 
-   
+
 
     .album-page__info-block {
         gap: 10px;

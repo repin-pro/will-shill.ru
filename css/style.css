@@ -1521,6 +1521,7 @@ textarea {
 @media (max-width: 1200px) {
     .album-page__info-block {
         gap: 50px;
+        margin-bottom: 80px;
     }
 
     .about-page__wrap {
@@ -1554,6 +1555,11 @@ textarea {
 }
 
 @media (max-width: 992px) {
+
+    .album-page__info-block {
+        gap: 30px;
+        margin-bottom: 50px;
+    }
 
     .album-page-container,
     .album-page__info-block {
@@ -1693,7 +1699,13 @@ textarea {
 
 @media (max-width: 768px) {
 
-    
+     .audio-player {
+        margin-bottom: 50px;
+    }
+
+    .album-page__info-block {
+        gap: 20px;
+    }
 
     .coll-back-btn {
         padding: 10px 40px;
@@ -1799,6 +1811,12 @@ textarea {
 }
 
 @media (max-width: 480px) {
+
+   
+
+    .album-page__info-block {
+        gap: 10px;
+    }
 
     .volume-range {
         display: none;

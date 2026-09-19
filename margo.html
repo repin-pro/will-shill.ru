@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
+  <script defer src="js/script.js"></script>
+  <script defer src="js/song.js"></script>
+</head>
+
+<body>
+  <nav class="menu" aria-label="Основное меню сайта">
+    <div class="menu__cont">
+      <div class="menu__top-wrap">
+        <a class="header__logo-link" href="index.html">
+          <img class="header__logo" src="img/logo.svg" alt="Логотип компании">
+        </a>
+        <button class="menu__closed" type="button" aria-label="Закрыть меню">
+          <svg class="icon-closed" viewBox="0 0 16 16" aria-hidden="true" focusable="false">
+            <use href="sprites.svg#icon-closed"></use>
+          </svg>
+          <span class="visually-hidden">Закрыть меню</span>
+        </button>
+      </div>
+    </div>
+
+    <ul class="menu-style">
+      <li class="main-text white-text-animation">
+        <a href="about.html" class="footer__menu-link">Обо мне</a>
+      </li>
+      <li class="main-text white-text-animation">
+        <a href="gallery.html" class="footer__menu-link">Галерея</a>
+      </li>
+      <li class="main-text white-text-animation">
+        <a href="songs.html" class="footer__menu-link">Мои песни</a>
+      </li>
+      <li class="main-text white-text-animation">
+        <a href="video.html" class="footer__menu-link">Видео</a>
+      </li>
+      <li class="main-text white-text-animation">
+        <a href="contact.html" class="footer__menu-link">Контакты</a>
+      </li>
+    </ul>
+
+    <ul class="social-button">
+      <li class="social-button-list">
+        <a class="social-button-link" href="https://vk.ru/club35013292" aria-label="ВКонтакте" target="_blank"
+          rel="noopener noreferrer">
+          <svg class="btn-social icon-animation" viewBox="0 0 50 50" aria-hidden="true" focusable="false">
+            <use href="sprites.svg#vk"></use>
+          </svg>
+        </a>
+      </li>
+      <li class="social-button-list">
+        <a class="social-button-link" href="https://dzen.ru/id/64ad271313ff8216f10c7faf" aria-label="Дзен"
+          target="_blank" rel="noopener noreferrer">
+          <svg class="btn-social icon-animation" viewBox="0 0 50 50" aria-hidden="true" focusable="false">
+            <use href="sprites.svg#dzen"></use>
+          </svg>
+        </a>
+      </li>
+      <li class="social-button-list">
+        <a class="social-button-link"
+          href="https://max.ru/u/f9LHodD0cOLLGyQmQoLq6-svdly1-G2yXFyvW3MHEe_JWJzoySJHfmygBRc"
+          aria-label="Написать в MAX" target="_blank" rel="noopener noreferrer">
+          <svg class="btn-social icon-animation" viewBox="0 0 50 50" aria-hidden="true" focusable="false">
+            <use href="sprites.svg#max"></use>
+          </svg>
+        </a>
+      </li>
+    </ul>
+  </nav>
+
+  <header class="header">
+    <div class="header__slider-wrapper">
+      <div class="slider">
+        <!-- Контейнер для фоновых изображений -->
+        <div class="slider__background">
+          <div class="slide slide-1"></div>
+          <div class="slide slide-2"></div>
+          <div class="slide slide-3"></div>
+          <div class="slide slide-4"></div>
+          <div class="slide slide-5"></div>
+          <div class="slide slide-6"></div>
+          <div class="slide slide-7"></div>
+        </div>
+      </div>
+
+      <!-- Контент, который должен оставаться видимым -->
+      <div class="header__overlay container">
+        <!-- Логотип и бургер внутри контейнера -->
+        <div class="container header__top-container">
+          <div class="header__top">
+            <a class="header__logo-link" href="index.html">
+              <img class="header__logo" src="img/logo.svg" alt="Логотип компании">
+            </a>
+            <button class="header__burger" type="button">
+              <span class="visually-hidden">Открыть меню</span>
+            </button>
+          </div>
+        </div>
+
+        <img class="title-image" src="img/logo-big.svg" alt="Михаил Вяльшин">
+
+        <div class="header__content container">
+          <div class="header__content-social">
+            <a href="contact.html" class="coll-back-btn btn-stroke" target="_blank">Обратный звонок</a>
+            <ul class="social-button">
+              <li class="social-button-list">
+                <a class="social-button-link" href="https://vk.ru/club35013292" aria-label="ВКонтакте" target="_blank">
+                  <svg class="btn-social icon-animation" viewBox="0 0 50 50">
+                    <use href="sprites.svg#vk"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social-button-list">
+                <a class="social-button-link" href="https://dzen.ru/id/64ad271313ff8216f10c7faf" aria-label="Дзен"
+                  target="_blank">
+                  <svg class="btn-social icon-animation" viewBox="0 0 50 50">
+                    <use href="sprites.svg#dzen"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social-button-list">
+                <a class="social-button-link"
+                  href="https://max.ru/u/f9LHodD0cOLLGyQmQoLq6-svdly1-G2yXFyvW3MHEe_JWJzoySJHfmygBRc"
+                  aria-label="Написать в MAX" target="_blank">
+                  <svg class="btn-social icon-animation" viewBox="0 0 50 50">
+                    <use href="sprites.svg#max"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+            <div class="header__arrow-wrap">
+              <svg class="arrow-down" viewBox="0 0 56 54" width="56" height="54">
+                <use href="sprites.svg#arrow-down"></use>
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <main class="page-main">
+    <section class="album-page">
+      <div class="container album-page-container">
+        <h2 class="title-h2 songs-page__title"><a class="song-page-link white-text-animation" href="songs.html">мои
+            песни</a> / марго</h2>
+
+        <div class="album-page__info-block">
+          <img class="album-page__img-album" src="img/albom/margot.jpg" alt="Альбом Марго">
+          <p class="main-text"></p>
+
+        </div>
+
+        <div class="audio-player gold-card-style">
+          <audio id="audio-element" preload="metadata">
+            <source src="" type="audio/mp3">
+            Ваш браузер не поддерживает аудиоэлемент.
+          </audio>
+
+          <div class="player-controls">
+            <button class="btn-audio" id="prev-btn" type="button">
+              <span class="visually-hidden">Предыдущий трек</span>
+              <svg class="icon-audio play-svg" viewBox="0 0 50 50">
+                <use href="sprites.svg#btn-player-back-track"></use>
+              </svg>
+            </button>
+            <button class="btn-audio" id="play-btn" type="button">
+              <span class="visually-hidden">Запустить выбранный трек</span>
+              <svg class="icon-audio play-svg" viewBox="0 0 50 50">
+                <use href="sprites.svg#btn-player-play"></use>
+              </svg>
+
+              <svg class="icon-audio pause-svg" viewBox="0 0 50 50">
+                <use href="sprites.svg#btn-player-pause"></use>
+              </svg>
+            </button>
+            <button class="btn-audio" id="next-btn" type="button">
+              <span class="visually-hidden">Следующий трек</span>
+              <svg class="icon-audio play-svg" viewBox="0 0 50 50">
+                <use href="sprites.svg#btn-player-next-track"></use>
+              </svg>
+            </button>
+            <div class="progress-bar-container">
+              <progress id="progress-bar" value="0" max="100"></progress>
+            </div>
+            <input class="volume-range" type="range" id="volume-control" min="0" max="1" step="0.01" value="0.8"
+              aria-label="Громкость">
+            <div class="time-display">
+              <span id="current-time">0:00</span> / <span id="total-time">0:00</span>
+            </div>
+          </div>
+
+          <div class="track-list">
+            <ul class="album-lists">
+              <li class="album-list white-text-animation" data-audio="albums/margo/01-three-springs.mp3">01. Три весны</li>
+              <li class="album-list white-text-animation" data-audio="albums/margo/02-margo.mp3">02. Марго</li>
+              <li class="album-list white-text-animation" data-audio="albums/margo/03-sunset.mp3">03. Закат</li>
+              <li class="album-list white-text-animation" data-audio="albums/margo/04-joys-of-childhood.mp3">04. Радости детства</li>
+              <li class="album-list white-text-animation" data-audio="albums/margo/05-myth.mp3">05. Миф</li>
+              <li class="album-list white-text-animation" data-audio="albums/margo/06-pier.mp3">06. Пристань</li>
+              <li class="album-list white-text-animation" data-audio="albums/margo/07-land-of-people.mp3">07. Земля людей</li>
+              <li class="album-list white-text-animation" data-audio="albums/margo/08-the-other-side-of-moscow.mp3">08. На обратной стороне Москвы</li>
+              <li class="album-list white-text-animation" data-audio="albums/margo/09-song.mp3">09. Песня</li>
+              <li class="album-list white-text-animation" data-audio="albums/margo/10-ruby.mp3">10. Рубин</li>
+              <li class="album-list white-text-animation" data-audio="albums/margo/11-first-friends.mp3">11. Первые друзья</li>
+            </ul>
+          </div>
+
+          <span class="current-track">Сейчас играет: </span>
+        </div>
+        <a href="songs.html" class="back-page-btn btn-stroke">Назад</a>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__items">
+        <div class="footer__left">
+          <a href="index.html" class="footer__left-link">
+            <span class="visually-hidden">Вернуться на главную страницу</span>
+            <div class="footer__left-logo"></div>
+          </a>
+        </div>
+
+        <div class="footer__center">
+          <!-- Просто div, без aria-level -->
+          <div class="footer__section-title">РАЗДЕЛЫ САЙТА</div>
+          <nav aria-label="Меню в подвале">
+            <ul class="footer-menu menu-style">
+              <li class="main-text menu-style footer__menu-text white-text-animation">
+                <a href="about.html" class="footer__menu-link">Обо мне</a>
+              </li>
+              <li class="main-text menu-style footer__menu-text white-text-animation">
+                <a href="gallery.html" class="footer__menu-link">Галерея</a>
+              </li>
+              <li class="main-text menu-style footer__menu-text white-text-animation">
+                <a href="songs.html" class="footer__menu-link">Мои песни</a>
+              </li>
+              <li class="main-text menu-style footer__menu-text white-text-animation">
+                <a href="video.html" class="footer__menu-link">Видео</a>
+              </li>
+              <li class="main-text menu-style footer__menu-text white-text-animation">
+                <a href="contact.html" class="footer__menu-link">Контакты</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+
+        <div class="footer__right">
+          <!-- Просто div, без aria-level -->
+          <div class="footer__section-title">СОЦИАЛЬНЫЕ СЕТИ</div>
+          <ul class="social-button">
+            <li class="social-button-list">
+              <a class="social-button-link" href="https://vk.ru/club35013292" aria-label="ВКонтакте" target="_blank"
+                rel="noopener noreferrer">
+                <svg class="btn-social icon-animation" viewBox="0 0 50 50" aria-hidden="true" focusable="false">
+                  <use href="sprites.svg#vk"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-button-list">
+              <a class="social-button-link" href="https://dzen.ru/id/64ad271313ff8216f10c7faf" aria-label="Дзен"
+                target="_blank" rel="noopener noreferrer">
+                <svg class="btn-social icon-animation" viewBox="0 0 50 50" aria-hidden="true" focusable="false">
+                  <use href="sprites.svg#dzen"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-button-list">
+              <a class="social-button-link"
+                href="https://max.ru/u/f9LHodD0cOLLGyQmQoLq6-svdly1-G2yXFyvW3MHEe_JWJzoySJHfmygBRc"
+                aria-label="Написать в MAX" target="_blank" rel="noopener noreferrer">
+                <svg class="btn-social icon-animation" viewBox="0 0 50 50" aria-hidden="true" focusable="false">
+                  <use href="sprites.svg#max"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>
